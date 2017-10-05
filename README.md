@@ -1,6 +1,5 @@
 ---
 title: Michael G. Brown   
-layout: default
 ---
 ## Michael G. Brown's Portfolio
 [Github Profile.](https://github.com/mgeorgebrown89)
