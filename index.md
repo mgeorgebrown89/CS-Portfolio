@@ -14,7 +14,7 @@ This portfolio will be a showcase of my senior project and all of my work done d
 
 ### Code Repository.
 
-All the code is kept [here.](https://github.com/mgeorgebrown89/CS-460)
+All the code is kept [here.](https://github.com/mgeorgebrown89/CS-Portfolio)
 
 ### Software Engineering I (CS 460)
 
