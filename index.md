@@ -4,7 +4,7 @@ layout: default
 ---
 ## The Portfolio.
 
-This is the beginning of my portfolio for CS 460. Notice the emphasis placed on the word "beginning."
+This is the *beginning* of my portfolio for CS 460. Notice the emphasis placed on the word "beginning."
 
 ### About Me.
 
@@ -18,6 +18,6 @@ All the code is kept [here.](https://github.com/mgeorgebrown89/CS-Portfolio)
 
 ### Software Engineering I (CS 460)
 
-1. [Homework 1](): HTML, CSS, Git and Bootstrap
+1. [Homework 1](CS-Portfolio/CS 460/hw1blog.md): HTML, CSS, Git and Bootstrap
 2. [Homework 2](): 
 3. [Homework 3](): 
