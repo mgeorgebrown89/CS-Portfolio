@@ -2,17 +2,17 @@
 title: Michael G. Brown   
 layout: default
 ---
-## Michael G. Brown's Portfolio
+## The Portfolio.
 
 This is the beginning of my portfolio for CS 460. Notice the emphasis placed on the word "beginning."
 
-### About Me
+### About Me.
 
 My name is Michael, and I am currently in my final year of the Computer Science program at Western Oregon University.
 
 This portfolio will be a showcase of my senior project and all of my work done during the final year of the program, including CS460,CS 461, and CS 462.
 
-### Code Repository
+### Code Repository.
 
 All the code is kept [here.](https://github.com/mgeorgebrown89/CS-460)
 
