@@ -3,7 +3,6 @@ title: Michael G. Brown
 layout: default
 ---
 ## Michael G. Brown's Portfolio
-[Github Profile.](https://github.com/mgeorgebrown89)
 
 This is the beginning of my portfolio for CS 460. Notice the emphasis placed on the word "beginning."
 
