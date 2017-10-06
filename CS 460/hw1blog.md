@@ -2,7 +2,7 @@
 Title: Homework 1.
 Layout: default
 ---
-[Portfolio Home](index.md) | Homework 1 | Homework 2 | Homework 3
+[Portfolio Home](CS 460/index.md) | Homework 1 | Homework 2 | Homework 3
 ## Homework 1
 Github | HTML | CSS | Bootstrap
 

@@ -3,6 +3,7 @@ title: Michael G. Brown
 layout: default
 ---
 Portfolio Home | [Homework 1](CS 460/hw1blog.md) | Homework 2 | Homework 3
+---
 ## Portfolio Home.
 
 This is the *beginning* of my portfolio. Notice the emphasis placed on the word "beginning."
