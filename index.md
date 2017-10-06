@@ -14,10 +14,4 @@ This portfolio is a showcase of my senior project and all of my work done during
 
 ### Code Repository.
 
-All the code is kept [here.](https://github.com/mgeorgebrown89/CS-Portfolio)
-
-### Software Engineering I (CS 460)
-
-1. [Homework 1](CS 460/hw1blog.md): Git, HTML, CSS, and Bootstrap.
-2. [Homework 2](): 
-3. [Homework 3](): 
+All the code is kept [here.](https://github.com/mgeorgebrown89/CS-Portfolio) 
