@@ -1,8 +1,8 @@
 ---
-Title: Homework 1.
+Title: CS 460 - Homework 1.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio/) - Homework 1
+## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio/) - CS 460 - Homework 1
 Github | HTML | CSS | Bootstrap
 
 For homework 1, we are supposed to create a set of webpages in HTML and CSS, utilizing Bootstrap libraries, all while learning how to use Git. 
