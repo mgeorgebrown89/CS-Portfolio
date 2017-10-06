@@ -3,11 +3,45 @@ body{
 }
 
 h1{
-    font-family: sans-serif
-    color: #5c5c69 
+    font-family: sans-serif;
+    color:cadetblue
+    
 }
 p {
     font-family: sans-serif
     color: #5c5c69
 }
 
+
+.navbar-brand {
+    color:dimgrey
+}
+
+.active {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+.container {
+    border-left: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: aliceblue
+}
+
+.col-sm-6 {
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.row {
+    padding: 20px;
+}
