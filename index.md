@@ -18,6 +18,6 @@ All the code is kept [here.](https://github.com/mgeorgebrown89/CS-Portfolio)
 
 ### Software Engineering I (CS 460)
 
-1. [Homework 1](CS 460/hw1blog.md): Git, HTML, CSS, and Bootstrap.
+1. [Homework 1](hw1blog.md): Git, HTML, CSS, and Bootstrap.
 2. [Homework 2](): 
 3. [Homework 3](): 
