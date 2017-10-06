@@ -1,7 +1,13 @@
+body{
+    background: #e1ddfc 
+}
+
 h1{
-    
+    font-family: sans-serif
+    color: #5c5c69 
 }
 p {
-    color: red
+    font-family: sans-serif
+    color: #5c5c69
 }
 
