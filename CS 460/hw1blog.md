@@ -2,8 +2,7 @@
 Title: Homework 1.
 Layout: default
 ---
-[Portfolio Home](CS 460/index.md) | Homework 1 | Homework 2 | Homework 3
-## Homework 1
+## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio/) - Homework 1
 Github | HTML | CSS | Bootstrap
 
 For homework 1, we are supposed to create a set of webpages in HTML and CSS, utilizing Bootstrap libraries, all while learning how to use Git. 
@@ -16,6 +15,6 @@ I downloaded the Git Bash since we're supposed to do everything from the command
 ```
 and after configuring Git, 
 ```
-    stuff
+    git config --global 
 
 ```
