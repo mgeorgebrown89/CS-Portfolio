@@ -30,5 +30,7 @@ $ git remote add origin
 and verified that it worked.
 ```
 $ git remote -v
-
+origin  https://github.com/mgeorgebrown89/CS-Portfolio.git (fetch)
+origin  https://github.com/mgeorgebrown89/CS-Portfolio.git (push)
 ```
+

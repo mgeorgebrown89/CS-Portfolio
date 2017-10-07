@@ -16,6 +16,7 @@ This portfolio is a showcase of my senior project and all of my work done during
 
 All the code is kept [here.](https://github.com/mgeorgebrown89/CS-Portfolio)
 
-### [Software Engineering I (CS 460)](CS 460)
-### Software Engineering II (CS 461)
-### Software Engineering II (CS 462)
+### Showcase.
+#### [Software Engineering I (CS 460)](CS 460)
+#### Software Engineering II (CS 461)
+#### Software Engineering II (CS 462)
