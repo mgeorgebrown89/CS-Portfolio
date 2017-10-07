@@ -65,5 +65,85 @@ I also tested the `pull` command by editing a file on my Github account in the b
 ```
 #### Step 3
 ##### HTML | CSS | Bootstrap
-The next step was to create a website using HTML and CSS. My experience with HTML was very limited, and my experience with CSS and Bootstrap was virutally nonexistent. I went through some basic tutorials and decided to make my website about my family, since the content didn't really matter, and I didn't have any other good ideas. I have a website for my DJ business (www.celebratewithcana.com) but I used squarespace, so it doesn't really teach anything about website design. 
-###### [The Brown Family Website](TheBrownFamilyWebsite)
+The next step was to create a website using HTML and CSS. My experience with HTML was very limited, and my experience with CSS and Bootstrap was virutally nonexistent. I went through some basic tutorials and decided to make my website about my family, since the content didn't really matter, and I didn't have any other good ideas. I have a website for my DJ business (www.celebratewithcana.com) but I used squarespace, so it doesn't really teach anything about website design.
+
+ Here is the link to my website. I'm not really happy with it. We are supposed to attempt to make a modern looking website, but mine definitely looks like its from 1997 or so. I may edit it from this point forward, but for now, here it is. 
+##### [The Brown Family Website](TheBrownFamilyWebsite)
+
+###### Requirement #1: Use Bootstrap | Demonstrate both single column and two or more column formatting
+
+I started by reading up on Bootstap, and decided to use the CDN rather than download it. I used Bootstrap mostly to utilize their grid system. I added this to my `<head>` part of the `michael.html` page 
+```
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+```
+and then added this two make two columns of equal width.
+```
+      <div class="container">
+          <h1>Michael George Brown</h1>
+          <div class="row">
+            <div class="col-sm-6" style="background-color:azure;">
+              <p>Husband to Koren, Father to Nora, Jane &amp; Margot.</p>
+                <p>Born in Portland, Oregon.</p>
+            </div>
+            <div class="col-sm-6" style="background-color:grey; border: 1px solid azure">
+              <p>Things Michael Likes:</p>
+                <ul>
+                <li>His family, obviously.</li>
+                <li>Running.</li>
+                <li>Coffee.</li>
+                <li>Music. Playing and listening.</li>
+                <li>Showing he knows how to use an unordered list in HTML.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+```
+###### Requirement #2: Use your own CSS file
+I made a CSS file, changing some aspects of my pages. Using the program "Brackets" made this really easy, as you can click on specific elements of HTML and add rules on your CSS page directly in the HTML editor. This actually helped me learn a lot about how HTML and CSS work together. 
+
+I played around with changing colors and font styles. I'm not a visual person, but I know when something looks bad, I just can't do much to fix it. I may try to make my business's website on my own later, but for now, this is what I've got. Here is an example from my CSS file:
+```
+.container {
+    border-left: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: darkseagreen
+}
+```
+
+###### Requirement #3: Navigation Bar or Menu
+I looked up Bootstrap's template for Navbars, and used this one:
+```
+	<script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">The Browns</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="michael.html">Michael</a></li>
+            <li><a href="korenet.html">Korenet</a></li>
+            <li><a href="nora.html">Nora</a></li>
+            <li><a href="jane.html">Jane</a></li>
+            <li><a href="margot.html">Margot</a></li>
+            <li><a href="future.html">The Future</a></li>
+            
+          </ul>
+            
+        </div>
+      </nav>
+```
+This is from the `michael.html` page, and if you look at the first `<li>` in the `<ul>`, you'll notice that it has an added attribute `class="active"` which makes that particular `<li>` a darker color, as well as some other things that I change in my own CSS file. For example:
+```
+.active {
+    font-size: 18px;
+    font-weight: 400;
+}
+```
+This made that part of the Navbar bigger and darker, making it clear to the user which page they are on. 
+###### Requirement #4: 
