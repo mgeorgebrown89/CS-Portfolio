@@ -36,7 +36,7 @@ $ git remote -v
 origin  https://github.com/mgeorgebrown89/CS-Portfolio.git (fetch)
 origin  https://github.com/mgeorgebrown89/CS-Portfolio.git (push)
 ```
-I then made some quick files, `add`ed, `commit`ed, and `push`ed them up to my Github repository.
+I then made some quick files, `add`ed, `commit`ed, and `push`ed them up to my Github repository. The first time I tried `push`ing, it ran into some issues with the autocrlf and safecrlf, so I set them to false, and it seemed to work. My professor said that for now, that's fine, but I will eventually have to figure it out when we get into more group work. 
 ```
     $ git add .
     
