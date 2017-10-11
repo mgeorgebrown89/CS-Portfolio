@@ -9,7 +9,7 @@ For homework 1, we are supposed to create a set of webpages in HTML and CSS, uti
 
 #### Step 1: Git | Repository
 I downloaded the Git Bash since we're supposed to do everything from the command line this term (and the whole year). I first created a repository on Github. I don't remember what I originally named it -- I've since changed it several times, finally landing on CS-Repository. I then created my corresponding folder locally 
-``` 
+```bash 
    $ cd ~/Documents
    $ mkdir CS\ Portfolio
 ```
