@@ -14,12 +14,12 @@ I downloaded the Git Bash since we're supposed to do everything from the command
    $ mkdir CS\ Portfolio
 ```
 and after configuring Git with my user name and email, 
-```
+```bash
     $ git config --global user.name "mgeorgebrown89"
     $ git config --global user.email "m.george.brown89@gmail.com"
 ```
 I ran into some issues with line ending preferences:
-```
+```bash
     $ git config --global core.autocrlf true
     $ git config --global core.safecrlf true
 ```
@@ -27,17 +27,17 @@ but more on that later.
 
 #### Step 2: Github | `pull` | `add` | `commit` | `push`
 Next, I added a `remote` to my local repository. 
-```
+```bash
 $ git remote add origin 
 ```
 and verified that it worked.
-```
+```bash
 $ git remote -v
 origin  https://github.com/mgeorgebrown89/CS-Portfolio.git (fetch)
 origin  https://github.com/mgeorgebrown89/CS-Portfolio.git (push)
 ```
 I then made some quick files, `add`ed, `commit`ed, and `push`ed them up to my Github repository. The first time I tried `push`ing, it ran into some issues with the autocrlf and safecrlf, so I set them to false, and it seemed to work. My professor said that for now, that's fine, but I will eventually have to figure it out when we get into more group work. 
-```
+```bash
     $ git add .
     
     $ git commit . -m "first commit"
@@ -55,7 +55,7 @@ I then made some quick files, `add`ed, `commit`ed, and `push`ed them up to my Gi
         8e20106..4a240c9  master -> master    
 ```
 I also tested the `pull` command by editing a file on my Github account in the browser and then `pull`ing it back down to my local repository. 
-``` 
+``` bash
     $ git pull origin master
     From https://github.com/mgeorgebrown89/CS-Portfolio
     * branch            master     -> FETCH_HEAD
@@ -66,17 +66,16 @@ The next step was to create a website using HTML and CSS. My experience with HTM
 
  Here is the link to my website. I'm not really happy with it. We are supposed to attempt to make a modern looking website, but mine definitely looks like its from 1997 or so. I may edit it from this point forward, but for now, here it is. 
 #### [The Brown Family Website](TheBrownFamilyWebsite)
-
 ##### Website Requirement #1: Use Bootstrap | Demonstrate both single column and two or more column formatting
 
 I started by reading up on Bootstap, and decided to use the CDN rather than download it. I used Bootstrap mostly to utilize their grid system. I added this to my `<head>` part of the `michael.html` page 
-```
+```html
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 ```
 and then added this two make two columns of equal width.
-```
+```html
       <div class="container">
           <h1>Michael George Brown</h1>
           <div class="row">
@@ -101,7 +100,7 @@ and then added this two make two columns of equal width.
 I made a CSS file, changing some aspects of my pages. Using the program "Brackets" made this really easy, as you can click on specific elements of HTML and add rules on your CSS page directly in the HTML editor. This actually helped me learn a lot about how HTML and CSS work together. 
 
 I played around with changing colors and font styles. I'm not a visual person, but I know when something looks bad, I just can't do much to fix it. I may try to make my business's website on my own later, but for now, this is what I've got. Here is an example from my CSS file:
-```
+```html
 .container {
     border-left: 1px solid dimgrey;
     border-top: 1px solid dimgrey;
@@ -113,7 +112,7 @@ I played around with changing colors and font styles. I'm not a visual person, b
 
 ##### Website Requirement #3: Navigation Bar or Menu
 I looked up Bootstrap's template for Navbars, and used this one:
-```
+```html
 	<script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
@@ -136,7 +135,7 @@ I looked up Bootstrap's template for Navbars, and used this one:
       </nav>
 ```
 This is from the `michael.html` page, and if you look at the first `<li>` in the `<ul>`, you'll notice that it has an added attribute `class="active"` which makes that particular `<li>` a darker color, as well as some other things that I change in my own CSS file. For example:
-```
+```html
 .active {
     font-size: 18px;
     font-weight: 400;
@@ -145,7 +144,7 @@ This is from the `michael.html` page, and if you look at the first `<li>` in the
 This made that part of the Navbar bigger and darker, making it clear to the user which page they are on. 
 ##### Website Requirement #4: Table
 We also were required to make a table. I again used Bootstrap for this. 
-```
+```html
 <div class="row">
             <div class="col-sm-12" style="background-color:azure;">
                     <div class="container">
@@ -194,7 +193,7 @@ We also were required to make a table. I again used Bootstrap for this.
 This worked pretty well. I did some weird things inside of the Bootstrap grid system. In certain views, the table container is actually bigger than the single column layout (also another requirement!) from Bootstrap. This was not something I was able to fix. 
 ##### Website Requirement #5: Three kinds of lists
 We also had to use one of each kind of list: `ul`, `ol`, and `dl`. I did each of these on different pages. First the unordered list, which I did on the `michael.html` page:
-```
+```html
 <p>Things Michael Likes:</p>
                 <ul>
                 <li>His family, obviously.</li>
@@ -205,7 +204,7 @@ We also had to use one of each kind of list: `ul`, `ol`, and `dl`. I did each of
                 </ul>
 ```
 Then, the ordered lists, which is on the `korenet.html` page (I wasn't feeling very creative):
-```
+```html
  <ol>
                 <li>One.</li>
                 <li>Dos.</li>
@@ -213,7 +212,7 @@ Then, the ordered lists, which is on the `korenet.html` page (I wasn't feeling v
                 </ol>
 ```
 And finally, the description list, which is on the `nora.html` page:
-```
+```html
  <dl>
                 <dt>Shocks</dt>
                     <dd>Socks</dd>
