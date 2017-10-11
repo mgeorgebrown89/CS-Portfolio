@@ -236,6 +236,4 @@ If you're reading this, I've succeeded in setting up my Portfolio on Github page
 #### Step 6: Blog Post
 this is so meta. 
 #### Step 7: Print Grading Rubric with URL
-If you're reading this, I've succeed in printing the HW1 rubric and correctly copied down my URL!
-#### Step 8: Cheat Sheets
-Hmmm. 
+If you're reading this, I've succeed in printing the HW1 rubric and correctly copied down my URL! 
