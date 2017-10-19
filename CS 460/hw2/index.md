@@ -2,7 +2,7 @@
 Title: CS 460 - Homework 2.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460) - Homework 2
+## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](../hw2) - Homework 2
 ### Git Branch | Merge | Javascript | jQuery | DOM
 
 For homework 2, we are supposed to create another small website, showing that we can do basic Javascript and jQuery while practicing branching with git. 
@@ -20,7 +20,7 @@ For this part, we were to think about what we wanted to do with Javascript. We n
 After tossing aronud a few ideas that were probably way too complicated, I decided to something involving calculations regarding user's self-reported health information. My first idea was rather morbid &emdash; a death-clock of sorts. Its just a joke, and the math is very basic and definitely not accurate at all. I  can't account for every variable in someone's life after all. 
 
 #### Step 3: Create a wireframe mockup
-Here we needed to make a diagram of what we wanted our site to look like. Here is mine.
+Here we needed to make a diagram of what we wanted our site to look like. My mockup is right [here]().
 
 #### Step 4: Create the working page
 This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly.
@@ -33,7 +33,7 @@ This part really frustrated me for awhile, but I eventually figured it out. I st
 
 #### Step 6: Merge
 Finally, we had to merge our hw2 branch into the master branch:
-```
+```bash
   $ git merge hw2
 Merge made by the 'recursive' strategy.
    CS 460/hw2/index.md           | 26 ++++++++++++++
@@ -45,7 +45,7 @@ Merge made by the 'recursive' strategy.
    create mode 100644 CS 460/hw2/website/styles.css
 ```
 and push it to our remote repository:
-```
+```bash
 $ git push origin master
 Counting objects: 8, done.
 Delta compression using up to 8 threads.
@@ -56,5 +56,6 @@ To https://github.com/mgeorgebrown89/CS-Portfolio.git
    867efbb..d2e6c58  master -> master
 ```
 This was slightly scary, but I did it!
-
-####
+ 
+#### Step 7: Portfolio
+Everything we do for hw2 had to go into this portfolio. If you're reading this, I did it!
