@@ -21,33 +21,34 @@
   <div class="row">
       <div class="col-md-7">
         <legend class="text-left text-info">Enter your info here: </legend>
-        <form id="generateExp" action="">
+        <form id="generateExp">
         <fieldset>
             <p>
                 <label for="Name">Name: </label>
-                <input id="name" name="name" type="text" />
+                <input id="name" name="name" type="text" required/>
             </p> 
             <p>
                 <label for="Age">Age: </label>
                 <input id="age" name="age" type="number">
             </p>
             <p>
-              <label for="Activity Level" Activity Level>Activity Level: </label>
-              <input type="range" />
+              <label for="Activity Level" Activity Level>Activity Level: 1-10 </label>
+              <input id="activity" type="number" />
             </p>
             <p>
-              <label for="Diet Quality" Activity Level>Diet Quality: </label>
-              <input type="range" />
+              <label for="Diet Quality" Activity Level>Diet Quality: 1-10</label>
+              <input id="diet" type="number" />
             </p>
             <p>
-            <input class="btn btn-primary" type="submit" value="Calculate Expiration Date">
+            <input onclick="calculate()" class="btn btn-primary" type="button" value="calculate">
             </p>
             </fieldset>
         </form>
       </div>
     <div class="col-md-5">
         <h2 class="text-left text-info">Your health stats: </h2>
-        
+        <p id="stats"></p>
+        <!-- should go here -->
     </div>
   </div>    
 </div>
@@ -62,10 +63,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     
     <script>
-    $(document).ready(() => {
-    $("")
-    });
-});
+        //to calculate expiration
+        function calculate(evt){
+            var name = document.getElementById('name');
+            var age = document.getElementById('age');
+            var activity = document.getElementById('activity');
+            var diet = document.getElementById('diet');
+            var randomDays = Math.floor(Math.random());
+            var text = ''
+            var i;
+            
+            var timeRemaining = 60-age.value + parseInt(activity.value) + parseInt(diet.value);
+            
+            var prediction = `Hello, ${name.value}. Based on your health statistics, you will expire in ${timeRemaining} years. Good luck!`;
+                
+            document.getElementById('stats').innerHTML = prediction;
+            evt.preventDefault();
+            }
     </script>
 </body>
 </html>
