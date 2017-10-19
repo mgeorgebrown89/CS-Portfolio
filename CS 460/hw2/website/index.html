@@ -14,41 +14,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--the title portion of the page-->
 <div class="jumbotron">
-    <h1 class="text-primary text-center">The Super <small>(In)</small>Accurate Expiration Date Predictor!</h1>    
+    <h1 class="display-5">The Super <small>(In)</small>Accurate Expiration Date Calculator!</h1>
+    <p class="lead">Find out how long you have!</p>
+    <hr class="my-4">
+    <p>Here at Grim&copy;, we use the latest, most realiable science stuff to predict your demise. We're really passionate about our work.</p>
 </div>
+<!--main content-->
 <div class="container-fluid">
   <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-7"><!--left side of main content-->
         <legend class="text-left text-info">Enter your info here: </legend>
         <form id="generateExp">
-        <fieldset>
-            <p>
-                <label for="Name">Name: </label>
-                <input id="name" name="name" type="text" required/>
-            </p> 
-            <p>
-                <label for="Age">Age: </label>
-                <input id="age" name="age" type="number">
+              <p>
+                Name: <br><input id="name" name="name" type="text" required>
+              </p> 
+              <p>
+                Age: <br><input id="age" name="age" type="number" min="1" max="120" required>
+              </p>
+              <p>
+                Activity Level: 1-10 <br><input id="activity" type="range" min="1" max="10" required>
+              </p>
+              <p>
+                Diet Quality: 1-10<br><input id="diet" type="range" min="1" max="10" required>
             </p>
             <p>
-              <label for="Activity Level" Activity Level>Activity Level: 1-10 </label>
-              <input id="activity" type="number" />
+            <input onclick="calculate()" class="btn btn-primary" type="button" value="Calculate">
+            <input class="btn btn-danger" type="reset" value="Reset">
             </p>
-            <p>
-              <label for="Diet Quality" Activity Level>Diet Quality: 1-10</label>
-              <input id="diet" type="number" />
-            </p>
-            <p>
-            <input onclick="calculate()" class="btn btn-primary" type="button" value="calculate">
-            </p>
-            </fieldset>
         </form>
       </div>
-    <div class="col-md-5">
+    <div class="col-md-5"> <!--right/bottom side of main content-->
         <h2 class="text-left text-info">Your health stats: </h2>
         <p id="stats"></p>
-        <!-- should go here -->
+        <!-- javascript stuff should go here -->
     </div>
   </div>    
 </div>
@@ -64,7 +64,7 @@
     
     <script>
         //to calculate expiration
-        function calculate(evt){
+        function calculate(Event){
             var name = document.getElementById('name');
             var age = document.getElementById('age');
             var activity = document.getElementById('activity');
@@ -76,9 +76,8 @@
             var timeRemaining = 60-age.value + parseInt(activity.value) + parseInt(diet.value);
             
             var prediction = `Hello, ${name.value}. Based on your health statistics, you will expire in ${timeRemaining} years. Good luck!`;
-                
             document.getElementById('stats').innerHTML = prediction;
-            evt.preventDefault();
+            Event.preventDefault();
             }
     </script>
 </body>

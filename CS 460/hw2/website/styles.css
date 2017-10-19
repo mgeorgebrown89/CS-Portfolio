@@ -4,3 +4,9 @@
     border-width: 2px;
     border-style: solid;
 }
+
+
+
+.no-bullets {
+    list-style-type: none;
+}
