@@ -21,11 +21,16 @@ For this part, we were to think about what we wanted to do with Javascript. We n
 After tossing aronud a few ideas that were probably way too complicated, I decided to something involving calculations regarding user's self-reported health information. My first idea was rather morbid &emdash; a death-clock of sorts. Its just a joke, and the math is very basic and definitely not accurate at all. I  can't account for every variable in someone's life after all. 
 
 #### Step 3: Create a wireframe mockup
-Here we needed to make a diagram of what we wanted our site to look like. My mockup is right [here](hw2/wireframe mockup hw2.pdf).
+Here we needed to make a diagram of what we wanted our site to look like. My mockup is right here.
+![wireframe mockup](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/wireframe%20mockup%20hw2.pdf "Homework 2 Wireframe Mockup")
 
 #### Step 4: Create the working page
 This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly.
-[Here](hw2/Output.pdf) is a screenshot of the final page before entering in anything to the form, and [here](hw2/Output2.pdf) is the page after entering in some information. You can view the actual page [here](website/index.html).
+Here is a screenshot of the final page before entering in anything to the form:
+![before](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/Output.pdf "Homework 2 Screenshot Before")
+and here is the page after entering in some information.
+![after](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/Output2.pdf "Homework 2 Screenshot After")
+You can view the actual page [here](website/index.html).
 
 #### Step 5: Commit and push work frequently
 I `commit`ed and `push`ed my work on a fairly regular basis. Every time I worked on homework 2, I `commit`ed and `push`ed my work at least once, if not multiple, times. 
