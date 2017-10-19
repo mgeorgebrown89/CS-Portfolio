@@ -24,3 +24,37 @@ Here we needed to make a diagram of what we wanted our site to look like. Here i
 
 #### Step 4: Create the working page
 This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly.
+
+...
+
+#### Step 5: Commit and push work frequently
+
+... 
+
+#### Step 6: Merge
+Finally, we had to merge our hw2 branch into the master branch:
+```
+  $ git merge hw2
+Merge made by the 'recursive' strategy.
+   CS 460/hw2/index.md           | 26 ++++++++++++++
+   CS 460/hw2/website/index.html | 84 +++++++++++++++++++++++++++++++++++++++++++
+   CS 460/hw2/website/styles.css | 12 +++++++
+   3 files changed, 122 insertions(+)
+   create mode 100644 CS 460/hw2/index.md
+   create mode 100644 CS 460/hw2/website/index.html
+   create mode 100644 CS 460/hw2/website/styles.css
+```
+and push it to our remote repository:
+```
+$ git push origin master
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.75 KiB | 898.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/mgeorgebrown89/CS-Portfolio.git
+   867efbb..d2e6c58  master -> master
+```
+This was slightly scary, but I did it!
+
+####
