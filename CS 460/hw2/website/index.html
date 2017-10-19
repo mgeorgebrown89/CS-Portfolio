@@ -14,7 +14,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="jumbotron">
+    <h1 class="text-primary text-center">The Super <small>(In)</small>Accurate Expiration Date Predictor!</h1>    
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-7">
+        <h2 class="text-left text-info">Enter your info here: </h2>
+        <form>
+          <div id="name">Name: <input type="text"></div> 
+          <input id="submit-name" class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="col-md-5">
+        <h2 class="text-right text-info">Your health stats: </h2>
+        
+    </div>
+  </div>    
+</div>
 
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -24,5 +41,14 @@
 
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+    <script>
+    $(document).ready(() => {
+    const $name = $("#name");
+    $("#submit-name").on("click", ()=>{
+        $name.css("visibility", "hidden");
+    })
+});
+    </script>
 </body>
 </html>
