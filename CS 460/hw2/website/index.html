@@ -28,7 +28,7 @@
         <legend class="text-left text-info">Enter your info here: </legend>
         <form id="generateExp">
               <p>
-                Name: <br><input id="name" name="name" type="text" required>
+                Name: <br><input id="username" name="name" type="text" required>
               </p> 
               <p>
                 Age: <br><input id="age" name="age" type="number" min="1" max="120" required>
@@ -40,7 +40,8 @@
                 Diet Quality: 1-10<br><input id="diet" type="range" min="1" max="10" required>
             </p>
             <p>
-            <input onclick="calculate()" class="btn btn-primary" type="button" value="Calculate">
+            <input id ="calculate" class="btn btn-primary" type="button" value="Calculate">
+                <!--onclick="calculate()"-->
             <input class="btn btn-danger" type="reset" value="Reset">
             </p>
         </form>
@@ -48,6 +49,7 @@
     <div class="col-md-5"> <!--right/bottom side of main content-->
         <h2 class="text-left text-info">Your health stats: </h2>
         <p id="stats"></p>
+        <div id="table"></div>
         <!-- javascript stuff should go here -->
     </div>
   </div>    
@@ -64,21 +66,31 @@
     
     <script>
         //to calculate expiration
-        function calculate(Event){
+      /*  function calculate(Event){
             var name = document.getElementById('name');
             var age = document.getElementById('age');
             var activity = document.getElementById('activity');
             var diet = document.getElementById('diet');
             var randomDays = Math.floor(Math.random());
-            var text = ''
-            var i;
             
             var timeRemaining = 60-age.value + parseInt(activity.value) + parseInt(diet.value);
             
             var prediction = `Hello, ${name.value}. Based on your health statistics, you will expire in ${timeRemaining} years. Good luck!`;
-            document.getElementById('stats').innerHTML = prediction;
+            $("stats").append("<p>test!</p>");
+            document.getElementById('stats').innerHTML = prediction;            
             Event.preventDefault();
-            }
+            }*/
+        
+        //jQuery!
+        
+        $(document).ready(function() {;
+           $("#calculate").click(function() {
+               $("#table").append(`<table id="newTable">
+<tr><th>Name</th><th>Age</th><th>Activity Level</th><th>Diet Quality</th></tr>
+<tr><td>${username.value}</td><td>${age.value}</td><td>${activity.value}</td><td>${diet.value}</td></tr></table`); 
+               $("#newTable").css("border: 1px solid black");
+           }); 
+        });
     </script>
 </body>
 </html>
