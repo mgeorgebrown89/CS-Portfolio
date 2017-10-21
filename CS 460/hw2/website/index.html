@@ -48,8 +48,8 @@
       </div>
     <div class="col-md-5"> <!--right/bottom side of main content-->
         <h2 class="text-left text-info">Your health stats: </h2>
-        <p id="stats"></p>
         <div id="table"></div>
+                <p id="stats"></p>
         <!-- javascript stuff should go here -->
     </div>
   </div>    
@@ -65,8 +65,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     
     <script>
-        //to calculate expiration
-      /*  function calculate(Event){
+         //jQuery!
+        
+        $(document).ready(function() {;
+           $("#calculate").click(function() {
+               var prediction = 60 - age.value + parseInt(activity.value) + parseInt(diet.value);
+               $("#table").append(`<table>
+<tr><th>Name</th><th>Age</th><th>Activity Level</th><th>Diet Quality</th></tr>
+<tr><td>${username.value}</td><td>${age.value}</td><td>${activity.value}</td><td>${diet.value}</td></tr></table`);
+               $("#stats").append(`<br />You have ${prediction} years left. Good luck!`)
+           }); 
+        });
+        
+ /*       //to calculate expiration
+        function calculate(Event){
             var name = document.getElementById('name');
             var age = document.getElementById('age');
             var activity = document.getElementById('activity');
@@ -76,21 +88,12 @@
             var timeRemaining = 60-age.value + parseInt(activity.value) + parseInt(diet.value);
             
             var prediction = `Hello, ${name.value}. Based on your health statistics, you will expire in ${timeRemaining} years. Good luck!`;
-            $("stats").append("<p>test!</p>");
+            
             document.getElementById('stats').innerHTML = prediction;            
             Event.preventDefault();
             }*/
         
-        //jQuery!
-        
-        $(document).ready(function() {;
-           $("#calculate").click(function() {
-               $("#table").append(`<table id="newTable">
-<tr><th>Name</th><th>Age</th><th>Activity Level</th><th>Diet Quality</th></tr>
-<tr><td>${username.value}</td><td>${age.value}</td><td>${activity.value}</td><td>${diet.value}</td></tr></table`); 
-               $("#newTable").css("border: 1px solid black");
-           }); 
-        });
+       
     </script>
 </body>
 </html>
