@@ -26,8 +26,8 @@ Here we needed to make a diagram of what we wanted our site to look like. My moc
 
 #### Step 4: Create the working page
 This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly.
-[Here](CS-Portfolio/CS 460/hw2/pre-input.PNG)is a screenshot of the final page before entering in anything to the form:
-and [here](CS-Portfolio/CS 460/hw2/output.PNG)
+[Here](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/pre-input.PNG)is a screenshot of the final page before entering in anything to the form:
+and [here](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/output.PNG)
  is the page after entering in some information.
 You can view the actual page [here](website/index.html).
 
