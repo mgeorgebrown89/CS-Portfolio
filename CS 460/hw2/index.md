@@ -22,7 +22,7 @@ After tossing aronud a few ideas that were probably way too complicated, I decid
 
 #### Step 3: Create a wireframe mockup
 Here we needed to make a diagram of what we wanted our site to look like. My mockup is right here.
-[wireframe mockup](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/wireframemockuphw2.png)
+![alt text](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/wireframemockuphw2.png "Wireframe Mockup")
 
 #### Step 4: Create the working page
 This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly.
