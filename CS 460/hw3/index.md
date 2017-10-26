@@ -36,6 +36,6 @@ We had to make sure we followed all of the conventions for C#, which I believe I
 
 That's what this part is. Here it is in action:
 
-![Postfix Calculator](https://mgeorgebrown89.github.io/CS-Portfolio/hw3/successfulbuildhw3.PNG)
+![Postfix Calculator](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw3/successfulbuildhw3.PNG)
 
-![Postfix Calculator](https://mgeorgebrown89.github.io/CS-Portfolio/hw3/executionhw3.PNG)
+![Postfix Calculator](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw3/executionhw3.PNG)
