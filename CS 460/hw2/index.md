@@ -21,14 +21,14 @@ For this part, we were to think about what we wanted to do with Javascript. We n
 After tossing aronud a few ideas that were probably way too complicated, I decided to something involving calculations regarding user's self-reported health information. My first idea was rather morbid &emdash; a death-clock of sorts. Its just a joke, and the math is very basic and definitely not accurate at all. I  can't account for every variable in someone's life after all. 
 
 #### Step 3: Create a wireframe mockup
-Here we needed to make a diagram of what we wanted our site to look like. My mockup is right
-[here](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/wireframemockuphw2.png).
+Here we needed to make a diagram of what we wanted our site to look like. My mockup is right here:
+![HW2 Mockup](https://github.com/mgeorgebrown89/CS-Portfolio/CS 460/hw2/wireframemockuphw2.png)
 
 #### Step 4: Create the working page
-This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly.
-[Here](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/pre-input.PNG)is a screenshot of the final page before entering in anything to the form:
-and [here](https://github.com/mgeorgebrown89/CS-Portfolio/blob/master/CS%20460/hw2/output.PNG)
- is the page after entering in some information.
+This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly. Here is a screenshot of the final page before entering in anything to the form:
+![Before](https://github.com/mgeorgebrown89/CS-Portfolio/CS460/hw2/pre-input.PNG)
+and here  is the page after entering in some information.
+![After](https://github.com/mgeorgebrown89/CS-Portfolio/CS460/hw2/output.PNG)
 You can view the actual page [here](website/index.html).
 
 #### Step 5: Commit and push work frequently
