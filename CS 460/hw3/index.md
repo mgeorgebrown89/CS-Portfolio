@@ -34,4 +34,8 @@ We had to make sure we followed all of the conventions for C#, which I believe I
 
 #### Step 7: Inlude your program in your portfolio.
 
-That's what this is. 
+That's what this part is. Here it is in action:
+
+![Postfix Calculator](https://mgeorgebrown89.github.io/CS-Portfolio/hw3/successfulbuildhw3.PNG)
+
+![Postfix Calculator](https://mgeorgebrown89.github.io/CS-Portfolio/hw3/executionhw3.PNG)
