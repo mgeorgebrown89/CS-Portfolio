@@ -26,9 +26,9 @@ Here we needed to make a diagram of what we wanted our site to look like. My moc
 
 #### Step 4: Create the working page
 This part really frustrated me for awhile, but I eventually figured it out. I struggled getting the form stuff to work correctly. Here is a screenshot of the final page before entering in anything to the form:
-![Before](https://mgeorgebrown89.github.io/CS-Portfolio/CS460/hw2/pre-input.PNG)
+![Before](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw2/pre-input.PNG)
 and here  is the page after entering in some information.
-![After](https://mgeorgebrown89.github.io/CS-Portfolio/CS460/hw2/output.PNG)
+![After](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw2/output.PNG)
 You can view the actual page [here](website/index.html).
 
 #### Step 5: Commit and push work frequently
