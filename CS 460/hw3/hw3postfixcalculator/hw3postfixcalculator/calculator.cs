@@ -62,9 +62,9 @@ namespace hw3postfixcalculator
          */
          public string EvaluatePostFixInput(string input)
         {
-            if (input == null || input.Contains(" "))
+            if (input == null || input == "")
             {
-                throw new ArgumentException("Null or only whitespace entered.");
+                throw new ArgumentException("Null.");
             }
             //clear stack before calculation
             stack.Clear();
@@ -91,7 +91,7 @@ namespace hw3postfixcalculator
                     }
                     else if (inputs[i].Length > 1)
                     {
-                        throw new ArgumentException("Input error. ")
+                        throw new ArgumentException("Input error. ");
                     }
                     else
                     {
@@ -104,10 +104,12 @@ namespace hw3postfixcalculator
                         c = (double)node2.Data;
                         //operator
                         token = inputs[i];
-                        answer = 
+                        answer = Operate(token, a, c);
+                        stack.Push(answer);
                     }
                 }
             }
+            return Convert.ToString(answer);
         }
         public double Operate(string token, double t, double o)
         {
@@ -134,7 +136,8 @@ namespace hw3postfixcalculator
                     {
                         throw new ArgumentException("Can't divide by 0!");
                     }
-                    catch (ArithmeticException e)
+                }
+                catch (ArithmeticException e)
                 {
                     throw new ArgumentException(e.ToString());
                 }
