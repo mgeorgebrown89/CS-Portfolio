@@ -21,11 +21,49 @@ namespace hw4.Controllers
         [HttpGet]
         public ActionResult Page1()
         {
+            ViewBag.Message = "Page 1: Temperature Converter";
             ViewBag.RequestMethod = "GET";
+            int temp = Convert.ToInt32(Request.QueryString["temp"]);
+            
+            int convTemp = 0;
+            string inputDeg = "";
+            string deg = "";
+
+            if (Request.QueryString["radio"] == "c")
+            {
+                inputDeg = "C";
+            }
+            else if (Request.QueryString["radio"] == "f")
+            {
+                inputDeg = "F";
+            }
+            else
+            {
+                Response.Write("Please select a degree type.");
+            }
+
+
+            if (inputDeg == "C")
+            {
+                convTemp = temp * (9 / 5) + 32;
+                deg = "F";
+            }
+            else if (inputDeg == "F")
+            {
+                convTemp = (temp - 32) / (9/5);
+                deg = "C";
+            }
+            else
+            {
+                Response.Write("Can't divide by zero!");
+            }
+
+            Response.Write(temp + " degrees " + inputDeg + " is " + convTemp + " degrees " + deg);
+            
             return View();
         }
 
-        // POST: Home/Page1
+     /*   // POST: Home/Page1
         [HttpPost]
         public ActionResult Page1(string name, string password, int? age)
         {
@@ -46,6 +84,6 @@ namespace hw4.Controllers
 
             // or return the same page
             return View();
-        }
+        } */
     }
 }
