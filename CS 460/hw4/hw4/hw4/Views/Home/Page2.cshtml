@@ -3,7 +3,7 @@
     ViewBag.Title = "Page2";
 }
 
-<h2>@ViewBag.Message</h2>
+<h2><span class="label label-default">@ViewBag.Message</span></h2>
 
 <div class="form-group">
     <form method="post" action="/Home/page2">
@@ -24,4 +24,4 @@
     </form>
 </div>
 
-<h3>@ViewBag.result</h3>
+<h1><span class="label label-danger">@ViewBag.result1</span> @ViewBag.eq <span class="label label-success">@ViewBag.result2</span></h1>

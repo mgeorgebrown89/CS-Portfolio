@@ -13,7 +13,7 @@ namespace hw4.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            ViewBag.Message = "This the Home Page.";
+            ViewBag.Message = "Homework 4's Home Page.";
             return View();
         }
 
@@ -48,7 +48,7 @@ namespace hw4.Controllers
         [HttpGet]
         public ActionResult Page2()
         {
-            ViewBag.Message1 = "Page 2: Temperature Converter 2.0";
+            ViewBag.Message = "Page 2: Temperature Converter 2.0";
             return View();
         }
 
@@ -56,6 +56,7 @@ namespace hw4.Controllers
         [HttpPost]
         public ActionResult Page2(FormCollection form)
         {
+            ViewBag.Message = "Page 2: Temperature Converter 2.0";
             //If user submits no data, do this:
             if (form == null)
             {
@@ -66,7 +67,7 @@ namespace hw4.Controllers
             double outputTemp = 0;
             string inputDeg = form["optradio"];
             string outputDeg = "";
-            string result = "";
+            string result1, result2 = "";
 
             if (inputDeg == "C") //celsius to fahrenheit
             {
@@ -83,9 +84,12 @@ namespace hw4.Controllers
                 Response.Write("Please enter a value.");
             }
 
-            result = inputTemp.ToString() + " " + inputDeg + " is " + outputTemp + " " + outputDeg;
+            result1 = inputTemp.ToString() + " " + inputDeg;
+            result2 = outputTemp + " " + outputDeg;
 
-            ViewBag.result = result;
+            ViewBag.result1 = result1;
+            ViewBag.result2 = result2;
+            ViewBag.eq = " = ";
 
 
             return View();
