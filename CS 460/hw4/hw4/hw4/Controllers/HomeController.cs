@@ -23,42 +23,24 @@ namespace hw4.Controllers
         {
             ViewBag.Message = "Page 1: Temperature Converter";
             ViewBag.RequestMethod = "GET";
-            int temp = Convert.ToInt32(Request.QueryString["temp"]);
-            
-            int convTemp = 0;
-            string inputDeg = "";
-            string deg = "";
 
-            if (Request.QueryString["radio"] == "c")
+            double temp = Convert.ToInt32(Request.QueryString["temp"]);
+            string degreeType = Request.QueryString["optradio"];
+            double convTemp = 0;
+            string convDeg = "";
+
+            if (degreeType == "C")
             {
-                inputDeg = "C";
-            }
-            else if (Request.QueryString["radio"] == "f")
-            {
-                inputDeg = "F";
+                convDeg = "F"; // what degree type we're converting INTO. 
+                convTemp = (temp * (9 / 5)) + 32;
             }
             else
             {
-                Response.Write("Please select a degree type.");
+                convDeg = "C"; // ^^^ CCCCC
+                convTemp = (temp - 32) / (9 / 5);
             }
 
-
-            if (inputDeg == "C")
-            {
-                convTemp = temp * (9 / 5) + 32;
-                deg = "F";
-            }
-            else if (inputDeg == "F")
-            {
-                convTemp = (temp - 32) / (9/5);
-                deg = "C";
-            }
-            else
-            {
-                Response.Write("Can't divide by zero!");
-            }
-
-            Response.Write(temp + " degrees " + inputDeg + " is " + convTemp + " degrees " + deg);
+            Response.Write(temp + " degrees " + degreeType + " is " + convTemp + " degrees " + convDeg + "." );
             
             return View();
         }

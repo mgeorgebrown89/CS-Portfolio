@@ -4,14 +4,22 @@
 }
 
 <h2>@ViewBag.Message</h2>
-
+<div class="form-horizontal">
 <form method="get" action="/Home/Page1">
-    <label for="temp">Temperature: </label>
-    <input type="number" name="temp" value="" />
-    <label for="c">C</label>
-    <input type="radio" name="c" value="F" />
-    <label for="f">F</label>
-    <input type="radio" name="f" value="C" />
 
-    <input type="submit" name="submit" value="Submit" />
+    <label for="temp">Temperature: </label>
+    <input type="number" class="form-control" name="temp" value="" />
+    <br />
+    <div class="radio-inline">
+      <label for="c"> C </label>
+      <input type="radio" name="optradio" value="C" checked />
+    </div>
+    <div class="radio-inline">
+      <label for="f"> F </label>
+      <input type="radio" name="optradio" value="F" />
+    </div>
+
+    <input type="submit" class="btn btn-default" name="submit" value="Submit" />
 </form>
+</div>
+
