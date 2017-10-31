@@ -22,7 +22,6 @@ namespace hw4.Controllers
         public ActionResult Page1()
         {
             ViewBag.Message = "Page 1: Temperature Converter";
-            ViewBag.RequestMethod = "GET";
 
             double temp = Convert.ToInt32(Request.QueryString["temp"]);
             string degreeType = Request.QueryString["optradio"];
@@ -40,32 +39,56 @@ namespace hw4.Controllers
                 convTemp = (temp - 32) / (9 / 5);
             }
 
-            Response.Write(temp + " degrees " + degreeType + " is " + convTemp + " degrees " + convDeg + "." );
-            
+            Response.Write(temp + " degrees " + degreeType + " is " + convTemp + " degrees " + convDeg + ".");
+
             return View();
         }
 
-     /*   // POST: Home/Page1
-        [HttpPost]
-        public ActionResult Page1(string name, string password, int? age)
+        // GET: Home/Page2
+        [HttpGet]
+        public ActionResult Page2()
         {
-            ViewBag.Message = "This is Page1.";
-            ViewBag.RequestMethod = "POST";
-            // What to do if we don't get something we need?  For now let's just
-            // tell the client they're "Bad" :-)
-            if (age == null)
+            ViewBag.Message1 = "Page 2: Temperature Converter 2.0";
+            return View();
+        }
+
+        // POST: Home/Page2
+        [HttpPost]
+        public ActionResult Page2(FormCollection form)
+        {
+            //If user submits no data, do this:
+            if (form == null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                Response.Write("Please enter something.");
             }
 
-            // Looks good, we can use this data
-            Debug.WriteLine($"{name}:{password}:{age}");
+            double inputTemp = Convert.ToDouble(form["temp"]);
+            double outputTemp = 0;
+            string inputDeg = form["optradio"];
+            string outputDeg = "";
+            string result = "";
 
-            // And then redirect the user to another page (if desired)
-            //return RedirectToAction("Index");
+            if (inputDeg == "C") //celsius to fahrenheit
+            {
+                outputDeg = "F";
+                outputTemp = (inputTemp * (9 / 5)) + 32;
+            }
+            else if (inputDeg == "F") // fahrenheit to celsius
+            {
+                outputDeg = "C";
+                outputTemp = (inputTemp - 32) / (9 / 5);
+            }
+            else
+            {
+                Response.Write("Please enter a value.");
+            }
 
-            // or return the same page
+            result = inputTemp.ToString() + " " + inputDeg + " is " + outputTemp + " " + outputDeg;
+
+            ViewBag.result = result;
+
+
             return View();
-        } */
+        }
     }
 }
