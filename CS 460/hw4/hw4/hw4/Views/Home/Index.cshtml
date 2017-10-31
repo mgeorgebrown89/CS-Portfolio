@@ -4,10 +4,16 @@
 
 
 <div class="container">
-    <h2><span class="label label-default">@ViewBag.Message</span></h2>
-    <ul class="list-inline">
-        <li class="list-group-item">@Html.ActionLink("Page 1", "page1")</li>
-        <li class="list-group-item">@Html.ActionLink("Page 2", "page2")</li>
-        <li class="list-group-item">Page 3</li>
-    </ul>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2><span class="label label-default">@ViewBag.Message</span></h2><br />
+            <ul class="list-inline">
+                <li class="list-group-item">@Html.ActionLink("Page 1", "page1")</li>
+                <li class="list-group-item">@Html.ActionLink("Page 2", "page2")</li>
+                <li class="list-group-item">@Html.ActionLink("Page 3", "page3")</li>
+            </ul>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
 </div>

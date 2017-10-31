@@ -94,5 +94,13 @@ namespace hw4.Controllers
 
             return View();
         }
+
+        //Get: Home/Page3
+        [HttpGet]
+        public ActionResult Page3()
+        {
+            ViewBag.Mesage = "Page 3: Loan Calculator";
+            return View();
+        }
     }
 }
