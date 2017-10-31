@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Page1";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<form method="post" action="/Home/Page1">
+    <label for="firstName">Your name</label>
+    <input type="text" name="firstName" value="" />
+    <label for="lastName">Your password</label>
+    <input type="text" name="=lastName" value="" />
+    <label for="age">Age</label>
+    <input type="number" name="age" value="" />
+
+    <input type="submit" name="submit" value="Submit" />
+</form>
+
