@@ -16,8 +16,13 @@ namespace hw4.Controllers
             ViewBag.Message = "Homework 4's Home Page.";
             return View();
         }
-
+        
         // GET: Home/Page1
+        /// <summary>
+        /// This page takes info from the user from a form
+        /// and converts it into celsius or fahrenheit from the other. Uses Response.Write
+        /// </summary>
+        /// <returns>A page with results from temp coversion in a string.</returns>
         [HttpGet]
         public ActionResult Page1()
         {
@@ -45,6 +50,10 @@ namespace hw4.Controllers
         }
 
         // GET: Home/Page2
+        /// <summary>
+        /// This is a slightly better page than the previous. 
+        /// </summary>
+        /// <returns>A view with an empty form</returns>
         [HttpGet]
         public ActionResult Page2()
         {
@@ -53,6 +62,11 @@ namespace hw4.Controllers
         }
 
         // POST: Home/Page2
+        /// <summary>
+        /// This returns a view with the converted temperature.
+        /// </summary>
+        /// <param name="form">The form with temperature info. Degrees and C or F.</param>
+        /// <returns>Returns converted temp in a view</returns>
         [HttpPost]
         public ActionResult Page2(FormCollection form)
         {
@@ -96,6 +110,10 @@ namespace hw4.Controllers
         }
 
         //Get: Home/Page3
+        /// <summary>
+        /// This view is of a Monthly loan calculator.
+        /// </summary>
+        /// <returns>It returns a view with a form.</returns>
         [HttpGet]
         public ActionResult Page3() 
         {
@@ -104,7 +122,14 @@ namespace hw4.Controllers
         }
 
         //POST: Home/Page3
-
+        /// <summary>
+        /// This viwq takes info from the form and 
+        /// calculates the monthly payments for a loan.
+        /// </summary>
+        /// <param name="principle">The initial amount of the loan.</param>
+        /// <param name="rate">The annual interest rate.</param>
+        /// <param name="term">How long, in months, the loan lasts</param>
+        /// <returns>returns a view with monthly loan payment amount</returns>
         [HttpPost]
         public ActionResult Page3(double? principle, double? rate, double? term)
         {
