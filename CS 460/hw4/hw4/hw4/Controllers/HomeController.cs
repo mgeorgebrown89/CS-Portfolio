@@ -97,9 +97,43 @@ namespace hw4.Controllers
 
         //Get: Home/Page3
         [HttpGet]
-        public ActionResult Page3()
+        public ActionResult Page3() 
         {
             ViewBag.Mesage = "Page 3: Loan Calculator";
+            return View();
+        }
+
+        //POST: Home/Page3
+
+        [HttpPost]
+        public ActionResult Page3(double? principle, double? rate, double? term)
+        {
+            ViewBag.Message = "Monthly Loan Terms:";
+            double prin = principle.Value; //initial amount
+            double ra = rate.Value; // annual interest rate
+            double ter = term.Value; // how long the loan is for in months
+
+            double ratePerPeriod = (ra/100)/12; // rate per period
+
+            double loanPayment = prin * (ratePerPeriod / (1 - Math.Pow((1 + ratePerPeriod), -ter)));
+
+
+            ViewBag.principle = prin;
+            ViewBag.rate = ra;
+            ViewBag.term = ter;
+            ViewBag.loan = Math.Round(loanPayment, 2);
+           
+            if (principle == null)
+            {
+                ViewBag.Answer = false;
+            }
+            else
+            {
+                ViewBag.Answer = true;
+            }
+
+
+
             return View();
         }
     }

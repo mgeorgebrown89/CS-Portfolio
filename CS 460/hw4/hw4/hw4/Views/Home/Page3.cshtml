@@ -3,5 +3,32 @@
     ViewBag.Title = "Page3";
 }
 
-<h2>Page3</h2>
+<h2><span class="label label-default">@ViewBag.Message</span></h2>
 
+<!--the loan amount, interest rate and term length
+    (principal, monthly interest rate and number of payments)-->
+
+<div class="form-group">
+    <form method="post">
+
+        <label for="principle">Principle: </label>
+        <input type="number" class="form-control" name="principle" value="" step="100" required />
+        <br />
+
+        <label for="rate">Annual Interest Rate: </label>
+        <input type="number" class="form-control" name="rate" min="1" max="100" step="0.01" requried/>
+        <br />
+
+        <label for="term">Term Length (In Months): </label>
+        <input type="number" class="form-control" name="term" value="" required/>
+        <br />
+
+        <input type="submit" class="btn btn-primary" name="submit" value="Submit" />
+    </form>
+</div>
+
+
+<h2>To pay off a loan of <span class="label label-default">$@ViewBag.principle</span></h2>
+<h2>at an annual interest rate of <span class="label label-danger">@ViewBag.rate%</span></h2>
+<h2>over a period of <span class="label label-warning">@ViewBag.term</span> months</h2>
+<h2>You should pay <span class="label label-success">$@ViewBag.loan</span> each month.</h2>
