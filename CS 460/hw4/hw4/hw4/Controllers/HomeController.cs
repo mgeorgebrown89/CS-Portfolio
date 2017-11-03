@@ -133,6 +133,7 @@ namespace hw4.Controllers
         [HttpPost]
         public ActionResult Page3(double? principle, double? rate, double? term)
         {
+            ViewBag.Title = "Loan Calculator";
             ViewBag.Message = "Monthly Loan Terms:";
             double prin = principle.Value; //initial amount
             double ra = rate.Value; // annual interest rate
