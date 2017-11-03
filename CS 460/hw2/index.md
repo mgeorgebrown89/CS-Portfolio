@@ -2,7 +2,7 @@
 Title: CS 460 - Homework 2.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](../hw2) - Homework 2
+## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460) - Homework 2
 
 ### Git Branch | Merge | Javascript | jQuery | DOM
 
