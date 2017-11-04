@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2><span class="label label-default">@ViewBag.Message</span></h2><br />
+            <ul class="list-inline">
+                <li class="list-group-item">@Html.ActionLink("New Request", "NewRequest")</li>
+                <li class="list-group-item">@Html.ActionLink("Current Requests", "CurrentRequests")</li>
+            </ul>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
