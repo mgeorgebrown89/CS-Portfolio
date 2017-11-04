@@ -82,7 +82,7 @@ Here is the code for my HTML form:
 
 Here is the associated C# code in the Page1 controller:
 
-```C#
+```cs
 
 [HttpGet]
         public ActionResult Page1()
@@ -118,7 +118,7 @@ And here is a screen shot of Page1 in action:
 #### Step 5: Page 2. HTML POST and FormCollection.
 Now we had to do the same thing (in my case, the temperature converter), but instead use a `FormCollection` object and use HTML `POST` in the HTML form. After writing the code for the parameterless GET controller action method, I wrote the one parameter POST action method. It is displayed below:
 
-```C#
+```cs
 
 [HttpPost]
         public ActionResult Page2(FormCollection form)
@@ -196,7 +196,7 @@ I decided to do a monthly loan calculator for page 3, since 99% of the time(not 
 
 Here is the binded controller method:
 
-```C#
+```cs
 
   [HttpPost]
         public ActionResult Page2(FormCollection form)
