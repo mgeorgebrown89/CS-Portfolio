@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.Mvc;
+using Homework5.DAL;
+using Homework5.Models;
+
+namespace Homework5.Controllers
+{
+    public class DMVController : Controller
+    {
+        private DMVcontext db = new DMVcontext();
+
+        // GET: DMV
+        public ActionResult Index()
+        {
+            return View(db.DMVforms.ToList());
+        }
+    }
+}
