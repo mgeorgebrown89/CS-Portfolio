@@ -2,8 +2,8 @@
 (
     SELECT *
     FROM sys.tables
-    WHERE tables.name = 'DMVEntries'
+    WHERE tables.name = 'forms'
 )
 BEGIN
-    DROP TABLE dbo.DMVEntries
+    DROP TABLE dbo.forms
 END

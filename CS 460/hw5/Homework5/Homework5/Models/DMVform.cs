@@ -4,10 +4,9 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-
 namespace Homework5.Models
 {
-    public class DMVform
+    public class DMVForm
     {
         [Key]
         public int ODL { get; set; }
@@ -15,19 +14,17 @@ namespace Homework5.Models
         public DateTime DOB { get; set; }
 
         [Required, StringLength(64)]
-        [Display(Name = "Full Legal Name")]
+        [Display(Name = "Full Legals Name")]
         public string name { get; set; }
 
-        public string address { get; set; }
+        public string street { get; set; }
 
         public string city { get; set; }
 
         public string state { get; set; }
-
+        
         public int zip { get; set; }
 
         public string country { get; set; }
-
-
     }
 }

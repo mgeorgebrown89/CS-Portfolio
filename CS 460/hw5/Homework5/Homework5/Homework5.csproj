@@ -95,11 +95,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\DMV.mdf" />
-    <Content Include="App_Data\DMV_log.ldf">
-      <DependentUpon>DMV.mdf</DependentUpon>
+    <Content Include="App_Data\DMVdb.mdf" />
+    <Content Include="App_Data\DMVdb_log.ldf">
+      <DependentUpon>DMVdb.mdf</DependentUpon>
     </Content>
     <Content Include="App_Data\down.sql" />
+    <Content Include="App_Data\test.sql" />
     <Content Include="App_Data\up.sql" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -112,17 +113,19 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\DMVController.cs" />
+    <Compile Include="Controllers\DMVFormsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="DAL\DMVcontext.cs" />
+    <Compile Include="DAL\DMVFormContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DMVform.cs" />
+    <Compile Include="Models\DMVForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,7 +138,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\DMV\DMV.cshtml" />
+    <Content Include="Views\DMVForms\index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

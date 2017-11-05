@@ -1,5 +1,5 @@
-﻿-- DMVentries table
-CREATE TABLE dbo.DMVentries
+﻿-- DMVdb table
+CREATE TABLE dbo.forms
 (
 	ODL				INT  NOT NULL,
 	DOB				DateTime NOT NULL,
@@ -10,10 +10,10 @@ CREATE TABLE dbo.DMVentries
 	Zip				INT	NOT NULL,
 	Country			NVARCHAR(128) NOT NULL
 
-	CONSTRAINT [PK_dbo.DMVentries] PRIMARY KEY CLUSTERED (ODL ASC)
+	CONSTRAINT [PK_dbo.forms] PRIMARY KEY CLUSTERED (ODL ASC)
 );
 
-INSERT INTO dbo.DMVentries (ODL,DOB,Name,StreetAddress,City,State,Zip,Country) VALUES 
+INSERT INTO dbo.forms(ODL,DOB,Name,StreetAddress,City,State,Zip,Country) VALUES 
 	('1234567','1989-09-22 00:00:00', 'Michael Brown','12345 Meadow Ln','Monmouth','Oregon','97361','USA'),
 	('8910111','1990-07-27 00:00:00', 'Korenet Brown','12345 Meadow Ln','Monmouth','Oregon','97361','USA'),
 	('2131415','2014-06-28 00:00:00', 'Nora Brown','12345 Meadow Ln','Monmouth','Oregon','97361','USA'),

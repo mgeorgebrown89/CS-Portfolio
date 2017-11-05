@@ -11,14 +11,15 @@ using Homework5.Models;
 
 namespace Homework5.Controllers
 {
-    public class DMVController : Controller
+    public class DMVFormsController : Controller
     {
-        private DMVcontext db = new DMVcontext();
+        private DMVFormContext db = new DMVFormContext();
 
-        // GET: DMV
+        // GET: DMVForms
         public ActionResult Index()
         {
-            return View(db.DMVforms.ToList());
+            Response.Write(db.DMVForms.ToList());
+            return View(db.DMVForms.ToList());
         }
     }
 }
