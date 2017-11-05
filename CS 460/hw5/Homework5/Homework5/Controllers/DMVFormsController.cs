@@ -18,8 +18,11 @@ namespace Homework5.Controllers
         // GET: DMVForms
         public ActionResult Index()
         {
-            Response.Write(db.DMVForms.ToList());
+
+           Response.Write(db.DMVForms.ToString());
             return View(db.DMVForms.ToList());
         }
+
+
     }
 }

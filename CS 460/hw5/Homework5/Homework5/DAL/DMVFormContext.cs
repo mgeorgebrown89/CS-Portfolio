@@ -9,7 +9,7 @@ namespace Homework5.DAL
 {
     public class DMVFormContext : DbContext
     {
-        public DMVFormContext() : base ("name=DMVdb")
+        public DMVFormContext() : base("name=DMVdb")
         { }
 
         public virtual DbSet<DMVForm> DMVForms { get; set; }

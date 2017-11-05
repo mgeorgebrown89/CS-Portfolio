@@ -26,5 +26,14 @@ namespace Homework5.Models
         public int zip { get; set; }
 
         public string country { get; set; }
+
+
+
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}: Name = {name} DOB = {DOB}";
+        }
     }
+
 }
