@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<hw5b.Models.DMVForm>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Current Requests";
 }
 
-<h2>Index</h2>
+<h2>Current Requests</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -65,9 +65,6 @@
             @Html.DisplayFor(modelItem => item.Country)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
     </tr>
 }
