@@ -4,7 +4,7 @@ layout: default
 ---
 # Portfolio Home.
 
-This is the *beginning* of my portfolio. Notice the emphasis placed on the word "beginning."
+Welcome to my portfolio!
 
 ## About Me.
 
