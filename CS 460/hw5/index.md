@@ -18,7 +18,7 @@ ID, ODL, Full Legal Name, Street Address, City, State, Zip, Country (which I rea
 #### Step 4: Data Model
 This is where we created our first (local) database. I ran into a lot, I mean **A LOT** of problems with this, but I'm pleased to say I got it all done and working correctly. Here are my up.sql and down.sql files:
 
-```SQL
+```sql
 
 -- DMVdb table
 CREATE TABLE dbo.DMVForms
@@ -47,7 +47,7 @@ INSERT INTO dbo.DMVForms(ODL,DOB,Name,StreetAddress,City,State,Zip,Country) VALU
 GO
 ```
 
-```SQL
+```sql
 IF EXISTS
 (
     SELECT *
