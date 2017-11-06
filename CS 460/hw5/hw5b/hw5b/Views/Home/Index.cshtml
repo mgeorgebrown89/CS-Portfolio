@@ -1,9 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Fake DMV";
 }
 
-<h2>Index</h2>
+<h2>Fake DMV</h2>
 
 <div class="container">
     <div class="row">
@@ -11,8 +11,8 @@
         <div class="col-md-4">
             <h2><span class="label label-default">@ViewBag.Message</span></h2><br />
             <ul class="list-inline">
-                <li class="list-group-item">@Html.ActionLink("New Request", "DMVForms")</li>
-                <li class="list-group-item">@Html.ActionLink("Current Requests", "./dmvforms")</li>
+                <li class="list-group-item">@Html.ActionLink("New Request", "Create","DMVForms")</li>
+                <li class="list-group-item">@Html.ActionLink("Current Requests", "Index","DMVForms")</li>
             </ul>
         </div>
         <div class="col-md-4"></div>
