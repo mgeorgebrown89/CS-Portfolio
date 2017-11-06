@@ -1,5 +1,5 @@
 ﻿-- DMVdb table
-CREATE TABLE dbo.forms
+CREATE TABLE dbo.DMVForms
 (
 	ID				INT Identity (1,1) NOT NULL,
 	ODL				INT  NOT NULL,
@@ -11,10 +11,10 @@ CREATE TABLE dbo.forms
 	Zip				INT	NOT NULL,
 	Country			NVARCHAR(128) NOT NULL
 
-	CONSTRAINT [PK_dbo.forms] PRIMARY KEY CLUSTERED (ID ASC)
+	CONSTRAINT [PK_dbo.DMVForms] PRIMARY KEY CLUSTERED (ID ASC)
 );
 
-INSERT INTO dbo.forms(ODL,DOB,Name,StreetAddress,City,State,Zip,Country) VALUES 
+INSERT INTO dbo.DMVForms(ODL,DOB,Name,StreetAddress,City,State,Zip,Country) VALUES 
 	('1234567','1989-09-22 00:00:00', 'Michael Brown','12345 Meadow Ln','Monmouth','Oregon','97361','USA'),
 	('8910111','1990-07-27 00:00:00', 'Korenet Brown','12345 Meadow Ln','Monmouth','Oregon','97361','USA'),
 	('2131415','2014-06-28 00:00:00', 'Nora Brown','12345 Meadow Ln','Monmouth','Oregon','97361','USA'),

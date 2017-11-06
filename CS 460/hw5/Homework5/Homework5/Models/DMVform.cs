@@ -8,9 +8,12 @@ namespace Homework5.Models
 {
     public class DMVForm
     {
-        [Key]
+        [Required]
+        public int ID { get; set; }
+
         public int ODL { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime DOB { get; set; }
 
         [Required, StringLength(64)]
@@ -22,7 +25,7 @@ namespace Homework5.Models
         public string city { get; set; }
 
         public string state { get; set; }
-        
+
         public int zip { get; set; }
 
         public string country { get; set; }

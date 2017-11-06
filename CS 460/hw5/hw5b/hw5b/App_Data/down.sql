@@ -4,5 +4,5 @@
     FROM sys.tables
 )
 BEGIN
-    DROP TABLE dbo.forms
+    DROP TABLE dbo.DMVForms
 END
