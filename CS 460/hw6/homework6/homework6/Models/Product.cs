@@ -27,6 +27,7 @@ namespace homework6.Models
 
         [Required]
         [StringLength(50)]
+        [Display (Name = "Product")]
         public string Name { get; set; }
 
         [Required]
@@ -45,9 +46,13 @@ namespace homework6.Models
         public short ReorderPoint { get; set; }
 
         [Column(TypeName = "money")]
+        [Display (Name = "Our  Price")]
+        [DisplayFormat(DataFormatString = "{0:C}")]
         public decimal StandardCost { get; set; }
 
         [Column(TypeName = "money")]
+        [Display(Name = "List  Price")]
+        [DisplayFormat(DataFormatString = "{0:C}")]
         public decimal ListPrice { get; set; }
 
         [StringLength(5)]

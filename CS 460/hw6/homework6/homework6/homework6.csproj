@@ -129,7 +129,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\MountainBikes.cshtml" />
+    <Content Include="Views\Home\Bikes.cshtml" />
+    <Content Include="Views\Home\Components.cshtml" />
+    <Content Include="Views\Home\Clothing.cshtml" />
+    <Content Include="Views\Home\Accessories.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />

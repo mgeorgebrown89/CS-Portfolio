@@ -21,6 +21,7 @@ namespace homework6.Models
 
         [Required]
         [StringLength(50)]
+        [Display (Name = "Bike")]
         public string Name { get; set; }
 
         [Column(TypeName = "xml")]

@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<homework6.Models.Product>
 
 @{
-    ViewBag.Title = "MountainBikes";
+    ViewBag.Title = "Bikes";
 }
 
-<h2>MountainBikes</h2>
+<h2>@ViewBag.BikeType</h2>
 
 <p></p>
 <table class="table">
@@ -19,22 +19,10 @@
             @Html.DisplayNameFor(model => model.StandardCost)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ListPrice)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Size)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Weight)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ProductLine)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Class)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Style)
         </th>
         <th></th>
     </tr>
@@ -51,22 +39,10 @@
             @Html.DisplayFor(modelItem => item.StandardCost)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ListPrice)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Size)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Weight)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductLine)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Class)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Style)
         </td>
     </tr>
 }

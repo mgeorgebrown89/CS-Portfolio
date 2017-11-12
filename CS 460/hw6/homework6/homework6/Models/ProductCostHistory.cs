@@ -21,6 +21,7 @@ namespace homework6.Models
         public DateTime? EndDate { get; set; }
 
         [Column(TypeName = "money")]
+        //[Display (StandardCost = "Our Price")]
         public decimal StandardCost { get; set; }
 
         public DateTime ModifiedDate { get; set; }
