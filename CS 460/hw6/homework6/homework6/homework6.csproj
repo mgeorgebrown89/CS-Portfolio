@@ -133,6 +133,7 @@
     <Content Include="Views\Home\Components.cshtml" />
     <Content Include="Views\Home\Clothing.cshtml" />
     <Content Include="Views\Home\Accessories.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />

@@ -27,12 +27,15 @@ namespace homework6.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ProductCategory productCategory = db.ProductCategories.Find(id);
-            if (productCategory == null)
+            var Product = db.Products.Find(id);
+           // var Photo = db.ProductPhotoes.Find(id);
+                
+            if (Product == null)
             {
                 return HttpNotFound();
             }
-            return View(productCategory);
+          //  ViewBag.Photo = Photo;
+            return View(Product);
         }
 
         //GET: Home/Bikes/sytle

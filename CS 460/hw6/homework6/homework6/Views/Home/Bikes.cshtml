@@ -24,30 +24,36 @@
         <th>
             @Html.DisplayNameFor(model => model.Weight)
         </th>
-        <th></th>
+        <th>
+            Details
+        </th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StandardCost)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Size)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Weight)
-        </td>
-        <td>
-            @Html.ActionLink("Details","Bikes",)
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        if (item.DiscontinuedDate >= DateTime.Today || item.DiscontinuedDate == null)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StandardCost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Size)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Weight)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", "Home", new { id = Html.DisplayFor(modelItem => item.ProductID) }, null)
+                </td>
+            </tr>
+        }
+    }
 
 </table>
