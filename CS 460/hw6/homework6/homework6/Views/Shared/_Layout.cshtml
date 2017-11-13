@@ -22,9 +22,9 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>@Html.ActionLink("All", "Bikes", "Home")</li>
-                        <li>@Html.ActionLink("Mountain", "Bikes", "Home", new { style = "mountain" }, null)</li>
-                        <li>@Html.ActionLink("Road", "Bikes", "Home", new { style = "road" }, null)</li>
-                        <li>@Html.ActionLink("Touring", "Bikes", "Home", new { style = "touring" }, null)</li>
+                        <li>@Html.ActionLink("Mountain", "Bikes", "Home", new { id = "mountain" }, null)</li>
+                        <li>@Html.ActionLink("Road", "Bikes", "Home", new { id = "road" }, null)</li>
+                        <li>@Html.ActionLink("Touring", "Bikes", "Home", new { id = "touring" }, null)</li>
                     </ul>
                 </li>
 
@@ -34,21 +34,21 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("All", "Components", "Home", new { type = "All" }, null)</li>
-                        <li>@Html.ActionLink("Handlebars", "Components", "Home", new { type = "Handlebars" }, null)</li>
-                        <li>@Html.ActionLink("Bottom Brackets", "Components", "Home", new { type = "Bottom Brackets" }, null)</li>
-                        <li>@Html.ActionLink("Brakes", "Components", "Home", new { type = "Brakes" }, null)</li>
-                        <li>@Html.ActionLink("Chains", "Components", "Home", new { type = "Chains" }, null)</li>
-                        <li>@Html.ActionLink("Cranksets", "Components", "Home", new { type = "Cranksets" }, null)</li>
-                        <li>@Html.ActionLink("Deraillers", "Components", "Home", new { type = "Derailleurs" }, null)</li>
-                        <li>@Html.ActionLink("Forks", "Components", "Home", new { type = "Forks" }, null)</li>
-                        <li>@Html.ActionLink("Headsets", "Components", "Home", new { type = "Headsets" }, null)</li>
-                        <li>@Html.ActionLink("Mountain Frames", "Components", "Home", new { type = "Mountain Frames" }, null)</li>
-                        <li>@Html.ActionLink("Road Frames", "Components", "Home", new { type = "Road Frames" }, null)</li>
-                        <li>@Html.ActionLink("Touring Frames", "Components", "Home", new { type = "Touring Frames" }, null)</li>
-                        <li>@Html.ActionLink("Pedals", "Components", "Home", new { type = "Pedals" }, null)</li>
-                        <li>@Html.ActionLink("Saddles", "Components", "Home", new { type = "Saddles" }, null)</li>
-                        <li>@Html.ActionLink("Wheels", "Components", "Home", new { type = "Wheels" }, null)</li>
+                        <li>@Html.ActionLink("All", "Components", "Home", new { id = "All" }, null)</li>
+                        <li>@Html.ActionLink("Handlebars", "Components", "Home", new { id = "Handlebars" }, null)</li>
+                        <li>@Html.ActionLink("Bottom Brackets", "Components", "Home", new { id = "Bottom Brackets" }, null)</li>
+                        <li>@Html.ActionLink("Brakes", "Components", "Home", new { id = "Brakes" }, null)</li>
+                        <li>@Html.ActionLink("Chains", "Components", "Home", new { id = "Chains" }, null)</li>
+                        <li>@Html.ActionLink("Cranksets", "Components", "Home", new { id = "Cranksets" }, null)</li>
+                        <li>@Html.ActionLink("Deraillers", "Components", "Home", new { id = "Derailleurs" }, null)</li>
+                        <li>@Html.ActionLink("Forks", "Components", "Home", new { id = "Forks" }, null)</li>
+                        <li>@Html.ActionLink("Headsets", "Components", "Home", new { id = "Headsets" }, null)</li>
+                        <li>@Html.ActionLink("Mountain Frames", "Components", "Home", new { id = "Mountain Frames" }, null)</li>
+                        <li>@Html.ActionLink("Road Frames", "Components", "Home", new { id = "Road Frames" }, null)</li>
+                        <li>@Html.ActionLink("Touring Frames", "Components", "Home", new { id = "Touring Frames" }, null)</li>
+                        <li>@Html.ActionLink("Pedals", "Components", "Home", new { id = "Pedals" }, null)</li>
+                        <li>@Html.ActionLink("Saddles", "Components", "Home", new { id = "Saddles" }, null)</li>
+                        <li>@Html.ActionLink("Wheels", "Components", "Home", new { id = "Wheels" }, null)</li>
 
                     </ul>
                 </li>
@@ -59,15 +59,15 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("All", "Clothing", "Home", new { part = "All" }, null)</li>
-                        <li>@Html.ActionLink("Bib-Shorts", "Clothing", "Home", new { part = "Bib-Shorts" }, null)</li>
-                        <li>@Html.ActionLink("Caps", "Clothing", "Home", new { part = "Caps" }, null)</li>
-                        <li>@Html.ActionLink("Gloves", "Clothing", "Home", new { part = "Gloves" }, null)</li>
-                        <li>@Html.ActionLink("Jerseys", "Clothing", "Home", new { part = "Jerseys" }, null)</li>
-                        <li>@Html.ActionLink("Shorts", "Clothing", "Home", new { part = "Shorts" }, null)</li>
-                        <li>@Html.ActionLink("Socks", "Clothing", "Home", new { part = "Socks" }, null)</li>
-                        <li>@Html.ActionLink("Tights", "Clothing", "Home", new { part = "Tights" }, null)</li>
-                        <li>@Html.ActionLink("Vests", "Clothing", "Home", new { part = "Vests" }, null)</li>
+                        <li>@Html.ActionLink("All", "Clothing", "Home", new { id = "All" }, null)</li>
+                        <li>@Html.ActionLink("Bib-Shorts", "Clothing", "Home", new { id = "Bib-Shorts" }, null)</li>
+                        <li>@Html.ActionLink("Caps", "Clothing", "Home", new { id = "Caps" }, null)</li>
+                        <li>@Html.ActionLink("Gloves", "Clothing", "Home", new { id = "Gloves" }, null)</li>
+                        <li>@Html.ActionLink("Jerseys", "Clothing", "Home", new { id = "Jerseys" }, null)</li>
+                        <li>@Html.ActionLink("Shorts", "Clothing", "Home", new { id = "Shorts" }, null)</li>
+                        <li>@Html.ActionLink("Socks", "Clothing", "Home", new { id = "Socks" }, null)</li>
+                        <li>@Html.ActionLink("Tights", "Clothing", "Home", new { id = "Tights" }, null)</li>
+                        <li>@Html.ActionLink("Vests", "Clothing", "Home", new { id = "Vests" }, null)</li>
                     </ul>
                 </li>
 
@@ -77,19 +77,19 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("All", "Accessories", "Home", new { type = "All" }, null)</li>
-                        <li>@Html.ActionLink("Bike Racks", "Accessories", "Home", new { type = "Bike Racks" }, null)</li>
-                        <li>@Html.ActionLink("Bike Stands", "Accessories", "Home", new { type = "Bike Stands" }, null)</li>
-                        <li>@Html.ActionLink("Bottles & Cages", "Accessories", "Home", new { type = "Bottles and Cages" }, null)</li>
-                        <li>@Html.ActionLink("Cleaners", "Accessories", "Home", new { type = "Cleaners" }, null)</li>
-                        <li>@Html.ActionLink("Fenders", "Accessories", "Home", new { type = "Fenders" }, null)</li>
-                        <li>@Html.ActionLink("Helmets", "Accessories", "Home", new { type = "Helmets" }, null)</li>
-                        <li>@Html.ActionLink("Hydration Packs", "Accessories", "Home", new { type = "Hydration Packs" }, null)</li>
-                        <li>@Html.ActionLink("Lights", "Accessories", "Home", new { type = "Lights" }, null)</li>
-                        <li>@Html.ActionLink("Locks", "Accessories", "Home", new { type = "Locks" }, null)</li>
-                        <li>@Html.ActionLink("Panniers", "Accessories", "Home", new { type = "Panniers" }, null)</li>
-                        <li>@Html.ActionLink("Pumps", "Accessories", "Home", new { type = "Pumps" }, null)</li>
-                        <li>@Html.ActionLink("Tires & Tubes", "Accessories", "Home", new { type = "Tires and Tubes" }, null)</li>
+                        <li>@Html.ActionLink("All", "Accessories", "Home", new { id = "All" }, null)</li>
+                        <li>@Html.ActionLink("Bike Racks", "Accessories", "Home", new { id = "Bike Racks" }, null)</li>
+                        <li>@Html.ActionLink("Bike Stands", "Accessories", "Home", new { id = "Bike Stands" }, null)</li>
+                        <li>@Html.ActionLink("Bottles & Cages", "Accessories", "Home", new { id = "Bottles and Cages" }, null)</li>
+                        <li>@Html.ActionLink("Cleaners", "Accessories", "Home", new { id = "Cleaners" }, null)</li>
+                        <li>@Html.ActionLink("Fenders", "Accessories", "Home", new { id = "Fenders" }, null)</li>
+                        <li>@Html.ActionLink("Helmets", "Accessories", "Home", new { id = "Helmets" }, null)</li>
+                        <li>@Html.ActionLink("Hydration Packs", "Accessories", "Home", new { id = "Hydration Packs" }, null)</li>
+                        <li>@Html.ActionLink("Lights", "Accessories", "Home", new { id = "Lights" }, null)</li>
+                        <li>@Html.ActionLink("Locks", "Accessories", "Home", new { id = "Locks" }, null)</li>
+                        <li>@Html.ActionLink("Panniers", "Accessories", "Home", new { id = "Panniers" }, null)</li>
+                        <li>@Html.ActionLink("Pumps", "Accessories", "Home", new { id = "Pumps" }, null)</li>
+                        <li>@Html.ActionLink("Tires & Tubes", "Accessories", "Home", new { id = "Tires and Tubes" }, null)</li>
                     </ul>
                 </li>
             </ul>

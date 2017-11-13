@@ -82,6 +82,7 @@
             <dd>
                 @Html.DisplayFor(model => model.Class)
             </dd>
+
         }
         @if (Model.Style != null)
         {
@@ -93,8 +94,21 @@
                 @Html.DisplayFor(model => model.Style)
             </dd>
         }
+            <dt>
+                Reviews
+            </dt>
+            <dd>
+                @foreach (var review in Model.ProductReviews)
+                {
+                    <hr />
+                    <p><b>Rating:</b> @review.Rating</p>
+                    <p><b>Reviewer:</b> @review.ReviewerName <b>Date:</b> @review.ReviewDate</p>
+                    <p>@review.Comments</p>
+                }
+            </dd>
+        
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Add a Review", "Review","Home",new { id = Model.ProductID }, null)
 </p>

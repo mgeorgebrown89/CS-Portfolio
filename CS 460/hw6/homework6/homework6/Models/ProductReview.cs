@@ -15,14 +15,17 @@ namespace homework6.Models
 
         [Required]
         [StringLength(50)]
+        [Display (Name = "Name")]
         public string ReviewerName { get; set; }
 
         public DateTime ReviewDate { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Display (Name = "Email")]
         public string EmailAddress { get; set; }
 
+        [Display (Name = "Rating: 1-5")]
         public int Rating { get; set; }
 
         [StringLength(3850)]
