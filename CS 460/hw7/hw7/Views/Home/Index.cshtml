@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "GifSearcher3000";
+}
+
+<h2 class="text-center">GifSearcher3000</h2>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1>Welcome to the Super Simple API demo page!</h1>
+    </div>
+    <div class="col-lg-6">
+        <form>
+            @*User enters a number.  This is how many random numbers we want to get via the simple API*@
+            <div class="form-group">
+                <label for="Count">How many random numbers would you like?</label>
+                <input id="Count" name="Count" type="number" value="10" min="1" max="100" class="form-control" />
+            </div>
+            @*Button to "submit" is Request.  Register callback function with jQuery to handle.*@
+            <input id="Request" name="Request" type="button" value="Request" class="btn btn-primary" />
+        </form>
+    </div>
+    <div class="col-lg-6">
+        <div id="Message"></div>
+        <div id="Amount"></div>
+        <div id="Values"></div>
+        <div id="Average"></div>
+
+    </div>
+</div>
+
+
+@section PageScripts
+{
+    <script type="text/javascript" src="~/Scripts/Search.js"></script>
+}
