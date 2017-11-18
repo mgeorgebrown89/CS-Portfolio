@@ -1,31 +1,78 @@
-﻿//console.log("In numbers.js")
+﻿
+$('#SearchRequest').click(function () {
 
-$("#Request").click(function () {
-    var a = $("#Count").val();
-    console.log(a);
-    var source = "/Home/RandomNumbers/" + a;
-    console.log(source);
+    var APIKeyMethod = "Home/APIKey";
+    console.log(APIKeyMethod);
 
-    // Send an async request to our server, requesting JSON back
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: source,
-        success: displayData,
-        error: errorOnAjax
+        url: APIKeyMethod,
+        success: getAPIKey
     });
 });
 
-function displayData(data) {
-    console.log(data);
-    $("#Message").text(data["message"]);
-    $("#Amount").text("Number of values requested " + data.num);
-    $("#Values").text(data.numbers);
-    var sum = data.numbers.reduce(function (a, b) { return a + b; });
-    var ave = sum / data.numbers.length;
-    $("#Average").text("Average of these values is " + ave);
+function getAPIKey(keyData) {
+    var searchQuery = $('#Search').val().trim().toLowerCase();
+    var APIKey = keyData["key"];
+    console.log(APIKey);
+
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + searchQuery + "&api_key=" + APIKey + "&limit=5";
+    console.log(queryURL);
+    var xhr = $.get(queryURL);
+    //xhr.done(function (data) { console.log("success got data", data); });
+
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: queryURL,
+        success: displayGif,
+        failure: errorOnAjax
+    });
+}
+
+
+
+
+function displayGif(response) {
+    //delete old gifs
+    $('#GifSearchResult').empty();
+
+    console.log(response);
+    for (var i = 0; i < response.data.length; i++) {
+        var currentStillURL = response.data[i].images.fixed_height_still.url; // still image 
+        var currentMovingURL = response.data[i].images.fixed_height.url; // moving image
+        // Collect the animal gif Ratings
+        var currentRating = response.data[i].rating;
+
+        // Correct for empty rating
+        if (currentRating == "") {
+            currentRating = "none";
+        }
+
+        // Create a Div to house Gif and Rating
+        var currentGifDiv = $('<div>');
+        currentGifDiv.addClass('gif_container'); // Added a class
+        currentGifDiv.attr('data-name', "unclicked"); // Added a Data Attributed for clicked
+
+        // Append Rating to current gif
+        var currentGifRating = $('<h1>');
+        currentGifRating.text("Rating: " + currentRating);
+        currentGifDiv.append(currentGifRating);
+
+        // Append Moving Gif Image
+        var currentGif = $('<img>')
+        currentGif.addClass('moving_gif'); // Added a class for animated gif
+        currentGif.attr("src", currentMovingURL);
+       // currentGif.hide(); // Hide the moving gif
+        currentGifDiv.append(currentGif);
+
+        // Append current Div to the DOM
+        $('#GifSearchResult').append(currentGifDiv);
+    }
 }
 
 function errorOnAjax() {
     console.log("error");
 }
+

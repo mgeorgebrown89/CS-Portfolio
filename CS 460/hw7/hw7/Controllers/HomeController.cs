@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -13,25 +14,17 @@ namespace hw7.Controllers
             return View();
         }
 
-
-        // GET: Home/RandomNumbers/10
-        public JsonResult RandomNumbers(int? id = 100)
+        public JsonResult APIKey()
         {
-            Random gen = new Random();
-            int[] arr = new int[(int)id];       // yes, no checking at the moment
-            for (int i = 0; i < arr.Length; ++i)
-            {
-                arr[i] = gen.Next(1000);
-            }
+            string GiphyAPIKey = System.Web.Configuration.WebConfigurationManager.AppSettings["GiphyAPIKey"];
+            //ViewBag.Key = GiphyAPIKey; //testing 
 
-            var data = new
+            var keyData = new
             {
-                message = "Hello from SimpleAPI",
-                num = (int)id,
-                numbers = arr
+                key = GiphyAPIKey,
             };
 
-            return Json(data, JsonRequestBehavior.AllowGet);
+            return Json(keyData, JsonRequestBehavior.AllowGet);
         }
     }
 }
