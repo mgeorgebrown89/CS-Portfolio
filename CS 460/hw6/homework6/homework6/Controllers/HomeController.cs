@@ -44,7 +44,9 @@ namespace homework6.Controllers
         { 
             var Product = db.Products.Find(id);
             ViewBag.product = Product.Name;
-            return View();
+            ProductReview PR = new ProductReview();
+            PR.ProductID = Product.ProductID;
+            return View(PR);
         }
 
         // Post: Home/Review/5
@@ -54,6 +56,7 @@ namespace homework6.Controllers
             "ReviewDate, EmailAddress, Rating, Comments, CommentsModifiedDate, Product ")] ProductReview review)
         {
             string id = review.ProductID.ToString();
+            ViewBag.ProductID = id;
             if (id == null)
             {
                 return RedirectToAction("Index");

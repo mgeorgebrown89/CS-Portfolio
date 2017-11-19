@@ -5,12 +5,14 @@ namespace homework6.Models
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Web.Mvc;
 
     [Table("Production.ProductReview")]
     public partial class ProductReview
     {
         public int ProductReviewID { get; set; }
 
+        [HiddenInput(DisplayValue = false)]
         public int ProductID { get; set; }
 
         [Required]
