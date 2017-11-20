@@ -14,13 +14,20 @@ namespace homework6.Controllers
     public class HomeController : Controller
     {
         private AdvWorksContext db = new AdvWorksContext();
-
+        /// <summary>
+        /// Loads the homepage.
+        /// </summary>
+        /// <returns>homepage view</returns>
         // GET: Home
         public ActionResult Index()
         {
             return View();
         }
-
+        /// <summary>
+        /// Provides the relevant details of the product.
+        /// </summary>
+        /// <param name="id">The specific ID of the product</param>
+        /// <returns>the details of a specific product in a view. also displays photo</returns>
         // GET: Home/Details/5
         public ActionResult Details(int? id)
         {
@@ -39,7 +46,11 @@ namespace homework6.Controllers
             }
             return View(Product);
         }
-
+        /// <summary>
+        /// this is how the user reviews a specific product.
+        /// </summary>
+        /// <param name="id">productID of specific product</param>
+        /// <returns>a review form</returns>
         // Get: Home/Review/5
         public ActionResult Review(int? id)
         { 
@@ -49,7 +60,11 @@ namespace homework6.Controllers
             PR.ProductID = Product.ProductID;
             return View(PR);
         }
-
+        /// <summary>
+        /// posts a review to a prodcuts detail page
+        /// </summary>
+        /// <param name="review">a review for a product</param>
+        /// <returns>either homepage or redirects to the details page of the reviewed product</returns>
         // Post: Home/Review/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -78,7 +93,11 @@ namespace homework6.Controllers
 
             return View(review);
         }
-
+        /// <summary>
+        /// displays bikes
+        /// </summary>
+        /// <param name="id">type of bike</param>
+        /// <returns>returns specific subcategory, or all, of bikes</returns>
         //GET: Home/Bikes/sytle
         public ActionResult Bikes(string id)
         {
@@ -107,7 +126,6 @@ namespace homework6.Controllers
                 return View(Bikes.ToList());
 
             }
-            //I can't initialize it any other way. I can't figure it out.
             
             /*switch (id)
             {
@@ -129,7 +147,11 @@ namespace homework6.Controllers
             }
             return View(Bikes.ToList());*/
         }
-
+        /// <summary>
+        /// displays components
+        /// </summary>
+        /// <param name="id">type of component</param>
+        /// <returns>returns view of subcategory of component</returns>
         //Get:Home/Components/type
         public ActionResult Components(string id)
         {
@@ -147,6 +169,11 @@ namespace homework6.Controllers
                 return View(Components.ToList());
             }
         }
+        /// <summary>
+        /// displays clothing
+        /// </summary>
+        /// <param name="id">type of clothing</param>
+        /// <returns>view of subcategory of clothing</returns>
         //Get:Home/Clothing/part
         public ActionResult Clothing(string id)
         {
@@ -164,6 +191,11 @@ namespace homework6.Controllers
                 return View(Clothing.ToList());
             }
         }
+        /// <summary>
+        /// displays accessories
+        /// </summary>
+        /// <param name="id">type of accessory</param>
+        /// <returns>view of subcateogry of accessory</returns>
         //Get:Home/Accessories/type
         public ActionResult Accessories(string id)
         {
