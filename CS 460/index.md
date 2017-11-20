@@ -10,7 +10,7 @@ Layout: default
 3. [Homework 3](hw3): Visual Studio, C#, Git 
 4. [Homework 4](hw4): MVC App #1, GET, POST, Model Binding
 5. [Homework 5](hw5): MVC App #2, Local Database
-6. [Homework 6]():
-7. [Homework 7]():
-8. [Homework 9]():
-9. [Homework 4]():
+6. [Homework 6](hw6): MVC App #3, Pre-Existing Database
+7. [Homework 7](hw7):
+8. [Homework 9](hw8):
+9. [Homework 4](hw9):
