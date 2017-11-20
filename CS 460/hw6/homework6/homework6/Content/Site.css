@@ -16,3 +16,13 @@ textarea {
     max-width: 280px;
 }
 
+.jumbotron {
+    background-image: url('~/Content/lotrbikes.jpg');
+    background-color: #17234E;
+    margin-bottom: 0;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

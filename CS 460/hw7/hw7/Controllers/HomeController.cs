@@ -17,7 +17,6 @@ namespace hw7.Controllers
         public JsonResult APIKey()
         {
             string GiphyAPIKey = System.Web.Configuration.WebConfigurationManager.AppSettings["GiphyAPIKey"];
-            //ViewBag.Key = GiphyAPIKey; //testing 
 
             var keyData = new
             {

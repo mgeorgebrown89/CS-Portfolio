@@ -5,49 +5,23 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <h2 class="text-center">GifSearcher3000</h2>
+        <h2 class="text-center"><span class="label label-primary">GifSearcher3000</span></h2>
     </div>
 </div>
 <div class="col-lg-6">
     <form>
         <div class="form-group">
             @*Text input for gif searching.*@
-            <label for="Search">Search gifs.</label>
-            <input id="Search" name="Search" type="text" value="Probably a cat." class="form-control" />
+            <h2><label for="Search" class="label label-primary">Search gifs.</label></h2>
+            <input id="Search" name="Search" type="text" value="cats" class="form-control" />
         </div>
         @*Buttom to submit search request.*@
-        <input id="SearchRequest" name="SearchRequest" type="button" value="Search" class="btn btn-lg btn-default" />
+        <input id="SearchRequest" name="SearchRequest" type="button" value="Search" class="btn btn-lg btn-primary" />
     </form>
     <div class="col-lg-6">
         <div id="GifSearchResult"></div>
     </div>
 </div>
-
-
-@*<div class="row">
-    <div class="col-lg-12">
-        <h1></h1>
-    </div>
-    <div class="col-lg-6">
-        <form>
-            @*User enters a number.  This is how many random numbers we want to get via the simple API*@
-           @* <div class="form-group">
-                <label for="Count">How many random numbers would you like?</label>
-                <input id="Count" name="Count" type="number" value="10" min="1" max="100" class="form-control" />
-            </div>
-            @*Button to "submit" is Request.  Register callback function with jQuery to handle.*@
-          @*  <input id="Request" name="Request" type="button" value="Request" class="btn btn-primary" />
-        </form>
-    </div>
-    <div class="col-lg-6">
-        <div id="Message"></div>
-        <div id="Amount"></div>
-        <div id="Values"></div>
-        <div id="Average"></div>
-
-    </div>
-</div>*@
-
 
 @section PageScripts
 {

@@ -29,13 +29,14 @@ namespace homework6.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             var Product = db.Products.Find(id);
-           // var Photo = db.ProductPhotoes.Find(id);
-                
+
+            byte[] image = Product.ProductProductPhotoes.FirstOrDefault().ProductPhoto.LargePhoto;
+            ViewBag.image = "data:image/png;base64," + Convert.ToBase64String(image, 0, image.Length);
+
             if (Product == null)
             {
                 return HttpNotFound();
             }
-          //  ViewBag.Photo = Photo;
             return View(Product);
         }
 
@@ -81,11 +82,34 @@ namespace homework6.Controllers
         //GET: Home/Bikes/sytle
         public ActionResult Bikes(string id)
         {
+            string Style = id;
             var Bikes = db.Products.Where(s => s.ProductSubcategory.ProductCategory.Name == "Bikes");
-            //ViewBag.BikesPhoto = (db.ProductPhotoes.Where(p => p.ProductPhotoID == 69).Select(p => p.ThumbnailPhotoFileName)).ToString();
-            //I can't initialize it any other way. I can't figure it out.
 
-            switch (id)
+            if (Style == "All" || Style == null)
+            {
+                ViewBag.BikeType = "All Bikes";
+                /*foreach (var bike in Bikes)
+                {
+                    byte[] image = bike.ProductProductPhotoes.FirstOrDefault().ProductPhoto.LargePhoto;
+                    ViewBag.image = "data:image/png;base64," + Convert.ToBase64String(image, 0, image.Length);
+                }*/
+                return View(Bikes.ToList());
+            }
+            else
+            {
+                Bikes = db.Products.Where(s => s.ProductSubcategory.Name == Style + " Bikes");
+                ViewBag.BikeType = Style + " Bikes";
+                /*foreach (var bike in Bikes)
+                {
+                    byte[] image = bike.ProductProductPhotoes.FirstOrDefault().ProductPhoto.LargePhoto;
+                    ViewBag.image = "data:image/png;base64," + Convert.ToBase64String(image, 0, image.Length);
+                }*/
+                return View(Bikes.ToList());
+
+            }
+            //I can't initialize it any other way. I can't figure it out.
+            
+            /*switch (id)
             {
                 case "mountain":
                     Bikes = db.Products.Where(s => s.ProductSubcategory.Name == "Mountain Bikes");
@@ -103,7 +127,7 @@ namespace homework6.Controllers
                     ViewBag.BikeType = "All Bikes";
                     break;
             }
-            return View(Bikes.ToList());
+            return View(Bikes.ToList());*/
         }
 
         //Get:Home/Components/type

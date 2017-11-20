@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - AdventureWorks</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
@@ -21,10 +21,10 @@
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("All", "Bikes", "Home")</li>
-                        <li>@Html.ActionLink("Mountain", "Bikes", "Home", new { id = "mountain" }, null)</li>
-                        <li>@Html.ActionLink("Road", "Bikes", "Home", new { id = "road" }, null)</li>
-                        <li>@Html.ActionLink("Touring", "Bikes", "Home", new { id = "touring" }, null)</li>
+                        <li>@Html.ActionLink("All", "Bikes", "Home",null,null)</li>
+                        <li>@Html.ActionLink("Mountain", "Bikes", "Home", new { id = "Mountain" }, null)</li>
+                        <li>@Html.ActionLink("Road", "Bikes", "Home", new { id = "Road" }, null)</li>
+                        <li>@Html.ActionLink("Touring", "Bikes", "Home", new { id = "Touring" }, null)</li>
                     </ul>
                 </li>
 
