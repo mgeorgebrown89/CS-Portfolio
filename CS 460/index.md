@@ -12,5 +12,5 @@ Layout: default
 5. [Homework 5](hw5): MVC App #2, Local Database
 6. [Homework 6](hw6): MVC App #3, Pre-Existing Database
 7. [Homework 7](hw7):
-8. [Homework 9](hw8):
-9. [Homework 4](hw9):
+8. [Homework 8](hw8):
+9. [Homework 9](hw9):
