@@ -14,7 +14,7 @@ namespace hw7.Controllers
             return View();
         }
 
-        public JsonResult APIKey()
+        public JsonResult GifSearch()
         {
             string GiphyAPIKey = System.Web.Configuration.WebConfigurationManager.AppSettings["GiphyAPIKey"];
 

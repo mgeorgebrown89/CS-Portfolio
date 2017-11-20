@@ -12,14 +12,14 @@
     <form>
         <div class="form-group">
             @*Text input for gif searching.*@
-            <h2><label for="Search" class="label label-primary">Search gifs.</label></h2>
-            <input id="Search" name="Search" type="text" value="cats" class="form-control" />
+            <h2><label for="SearchText" class="label label-primary">Search gifs.</label></h2>
+            <input id="SearchText" name="SearchText" type="text" value="cats" class="form-control" />
         </div>
         @*Buttom to submit search request.*@
-        <input id="SearchRequest" name="SearchRequest" type="button" value="Search" class="btn btn-lg btn-primary" />
+        <input id="SearchButton" name="SearchButton" type="button" value="Search" class="btn btn-lg btn-primary" />
     </form>
     <div class="col-lg-6">
-        <div id="GifSearchResult"></div>
+        <div id="results"></div>
     </div>
 </div>
 
