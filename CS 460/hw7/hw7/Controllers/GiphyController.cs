@@ -16,13 +16,14 @@ namespace hw7.Controllers
             return View("~/Views/Home/Index.cshtml");
         }
 
-        public JsonResult Search()
+        public JsonResult Search(int? page=1)
         {
             string GiphyAPIKey = System.Web.Configuration.WebConfigurationManager.AppSettings["GiphyAPIKey"];//get api key from outside repo
             string q = Request.QueryString["q"];//user's search
+            string limit = Request.QueryString["limit"];//how many gifs to display
 
             //Giphy API
-            string url = "https://api.giphy.com/v1/gifs/search?api_key=" + GiphyAPIKey + "&q=" + q + "&rating=g";
+            string url = "https://api.giphy.com/v1/gifs/search?api_key=" + GiphyAPIKey + "&q=" + q + "&limit=" + limit + "&rating=g";
 
             WebRequest request = WebRequest.Create(url); //send request
 

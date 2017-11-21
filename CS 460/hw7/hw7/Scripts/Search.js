@@ -1,4 +1,5 @@
-﻿
+﻿var page = 1;
+
 $("#SearchText").keypress(function (event) {
     //enter (13)
     if (event.keyCode == 13) {
@@ -11,9 +12,9 @@ $("#SearchButton").click(search); //new search
 
 function search() {
     var q = $("#SearchText").val();
-    var l = $("#limit").val();
+    var limit = $("#limit").val();
 
-    var source = "gif/searcher/" + page + "?q=" + q + "&limit=" + l;
+    var source = "gif/searcher/" + page + "?q=" + q + "&limit=" + limit;
     console.log(source);
 
     $.ajax({
