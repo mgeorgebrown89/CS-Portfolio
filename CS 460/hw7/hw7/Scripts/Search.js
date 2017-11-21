@@ -1,5 +1,4 @@
-﻿var page = 1;
-
+﻿
 $("#SearchText").keypress(function (event) {
     //enter (13)
     if (event.keyCode == 13) {
@@ -12,8 +11,9 @@ $("#SearchButton").click(search); //new search
 
 function search() {
     var q = $("#SearchText").val();
-   
-    var source = "gif/searcher/" + page + "?q=" + q;
+    var l = $("#limit").val();
+
+    var source = "gif/searcher/" + page + "?q=" + q + "&limit=" + l;
     console.log(source);
 
     $.ajax({
@@ -36,14 +36,10 @@ function displayGifs(response) {
         var currentStillURL = response.data[i].images.fixed_height_still.url; // still image 
         var currentMovingURL = response.data[i].images.fixed_height.url; // moving image
 
-        // Create a Div to house Gif and Rating
+        // Create a Div to house Gif
         var currentGifDiv = $('<div>');
-        currentGifDiv.addClass('gif_container'); // Added a class
-        currentGifDiv.attr('data-name', "unclicked"); // Added a Data Attributed for clicked
-
-        // Append Rating to current gif
-        var currentGifRating = $('<h1>');
-        currentGifDiv.append(currentGifRating);
+        currentGifDiv.addClass('gif_container'); // Add class
+        currentGifDiv.attr('data-name', "unclicked"); // Add Data Attributed for clicked
 
         // Append Moving Gif Image
         var currentGif = $('<img>')

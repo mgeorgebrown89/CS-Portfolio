@@ -15,6 +15,8 @@
             <h2><label for="SearchText" class="label label-primary">Search gifs.</label></h2>
             <input id="SearchText" name="SearchText" type="text" value="cats" class="form-control" />
         </div>
+        <label for="limit" class="label label-primary">How many?</label>
+        <input id="limit" name="limit" type="number" min="1" max="20" step="1" value="1" />
         @*Buttom to submit search request.*@
         <input id="SearchButton" name="SearchButton" type="button" value="Search" class="btn btn-lg btn-primary" />
     </form>
