@@ -14,10 +14,10 @@ namespace hw7
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Search",
-                url: "",
-                defaults: new {controller = "Home", action = ""}
-                );
+               name: "Search",
+               url: "gif/searcher/{page}",
+               defaults: new { controller = "Giphy", action = "Search", page = UrlParameter.Optional }
+           );
 
             routes.MapRoute(
                 name: "Default",

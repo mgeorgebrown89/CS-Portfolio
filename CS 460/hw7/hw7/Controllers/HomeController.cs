@@ -13,17 +13,5 @@ namespace hw7.Controllers
         {
             return View();
         }
-
-        public JsonResult APIKey()
-        {
-            string GiphyAPIKey = System.Web.Configuration.WebConfigurationManager.AppSettings["GiphyAPIKey"];
-
-            var keyData = new
-            {
-                key = GiphyAPIKey,
-            };
-
-            return Json(keyData, JsonRequestBehavior.AllowGet);
-        }
     }
 }
