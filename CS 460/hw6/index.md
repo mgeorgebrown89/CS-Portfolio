@@ -28,7 +28,11 @@ For this step, we needed to implement a storefront example, using the AdventureW
                     </ul>
                 </li>
 ```
-This is just for the Bikes category of products and its four subcategories. There are three other similar snippets of code that I won't show here for the remaining categories. 
+This is just for the Bikes category of products and its four subcategories. Here is a screenshot of the navbar:
+
+![navbar](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw6/navbar.PNG)
+
+There are three other similar snippets of code that I won't show here for the remaining categories. 
 
 The corresponding code in my controller shows how the links are handled.
 
@@ -65,7 +69,10 @@ The corresponding code in my controller shows how the links are handled.
 ```
 Here you can see that the parameter `id` gets passed in as the `Style` which determines which products get placed in the list of `Bikes`. If there is no `Style` specified, or it is `All`, then it displays all bikes in the category, otherwise it assumes what is passed is one of the subcategories, and filters the LINQ selection accordingly. This isn't a complete check, but it suffices for the purposes of this assignment (I hope). 
 
-You can also see my abandoned attempt at getting the pictures to display on this View. I thought I had it at first, but it was only displaying the last product in the foreach loop's picture, rather than each one individually. I had better success on the Details View, however. 
+You can also see my abandoned attempt at getting the pictures to display on this View. I thought I had it at first, but it was only displaying the last product in the foreach loop's picture, rather than each one individually. I had better success on the Details View, however. Here is a screenshot of the bikes list being displayed successfully:
+
+![Bikes List](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw6/bikeslist.PNG)
+
 
 I realized I could do some more filtering with `html` stuff, so I would only need to construct one View for the details of all products. By doing things like so:
 ```html
@@ -101,7 +108,9 @@ I could only display the information relevant to the product. I can also probabl
             return View(Product);
         }
 ```
-By now, I'd figured out LINQ a little better, and was using better queries. I needed some help, but I figured out the photoes eventually. 
+By now, I'd figured out LINQ a little better, and was using better queries. I needed some help, but I figured out the photoes eventually. Here is a screenshot of the details view:
+
+![Details](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw6/details.PNG)
 
 #### Step 4: Add Review
 Finally, we needed to add review functionality to our site. This gave me some trouble. I finally figured it out when I included the ProductID field in the form, but I didn't want the user to have to manually enter in the number before it would allow them to actually post their review. I realized that I wasn't actually passing a review object to the View in my GET method, so it wouldn't automatically have the ProductID when the user got their through the link from the details page of the product they wanted to review. I got it to work by actually passing the review object like so:
@@ -146,6 +155,14 @@ And then the ProductID field would already by filled when the user navigated the
             return View(review);
         }
 ```
+Here is a pair of screenshots that show the review form filled in, and the corresponding details page view with the new review added to the page:
+
+![Review Form](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw6/review.PNG)
+
+![New Review](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw6/reviewAdded.PNG)
+
+
+
 And with that, I was done. Below is a video demo of my site.
 
 ##### Demo
