@@ -150,5 +150,8 @@ And with that, I was done. Below is a video demo of my site.
 
 ##### Demo
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ReShEUasFF4" target="_blank"><img src="http://img.youtube.com/vi/ReShEUasFF4/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 #### Step 5: Portfolio
 Got it.
