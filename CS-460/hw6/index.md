@@ -2,7 +2,7 @@
 Title: CS 460 - Homework 6.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460) - Homework 6
+## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 6
 
 #### Step 1: Set Up the Database
 First, we downloaded and extracted the AdventureWorks 2014 sample database to use with our homework 6 project. 

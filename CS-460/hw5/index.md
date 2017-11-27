@@ -2,7 +2,7 @@
 Title: CS 460 - Homework 5.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460) - Homework 5
+## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 5
 
 #### Step 1: Create an Empty MVC project.
 This is the same as Homework 4. We couldn't use any pre-built code. I won't include a screenshot of it this time, since it's the same as the previous assignment. 
