@@ -11,6 +11,6 @@ Layout: default
 4. [Homework 4](hw4): MVC App #1, GET, POST, Model Binding
 5. [Homework 5](hw5): MVC App #2, Local Database
 6. [Homework 6](hw6): MVC App #3, Pre-Existing Database
-7. [Homework 7](hw7):
-8. [Homework 8](hw8):
-9. [Homework 9](hw9):
+7. [Homework 7](hw7): MVC APP #4, Giphy API, JSON
+8. [Homework 8](hw8): MVC APP #5, Multi-Table Relational Database
+9. [Homework 9](hw9): MVC APP #6, Cloud Deployment
