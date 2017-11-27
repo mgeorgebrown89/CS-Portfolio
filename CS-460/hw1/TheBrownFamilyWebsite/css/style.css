@@ -1,0 +1,67 @@
+body{
+    background: #e1ddfc 
+}
+
+h1{
+    font-family: sans-serif;
+    color:grey;
+    
+}
+p {
+    font-family: sans-serif
+    color: #5c5c69
+}
+
+
+.navbar-brand {
+    color:dimgray;
+}
+
+.active {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.container {
+    border-left: 1px solid dimgrey;
+    border-top: 1px solid dimgrey;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: darkseagreen
+}
+
+.col-sm-6 {
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 20px;
+    border-style:inset;
+}
+
+.row {
+    padding: 20px;
+}
+
+.navbar {
+    background-color: gainsboro;
+    font-variant-caps: all-petite-caps;
+}
+
+a {
+    color: black;
+
+}
+
+div {
+    color: black;
+}
+
+.container-fluid {
+    border: solid grey 1px;
+    border-style: inset;
+    border-radius: 25px;
+}
+
+.col-md-3 {
+    
+}
