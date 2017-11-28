@@ -161,7 +161,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\down.sql" />
-    <Content Include="App_Data\test.sql" />
+    <Content Include="App_Data\test1.sql" />
     <Content Include="App_Data\up.sql" />
     <Content Include="Content\bootstrap-Slate.css" />
     <Content Include="Content\bootstrap.css" />
