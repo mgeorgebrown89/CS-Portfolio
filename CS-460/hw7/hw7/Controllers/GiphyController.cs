@@ -29,7 +29,19 @@ namespace hw7.Controllers
             string url = "https://api.giphy.com/v1/gifs/search?api_key=" + GiphyAPIKey + "&q=" + q + "&limit=" + limit + "&rating=g";
 
             //logging requests
+            DateTime timestamp = DateTime.Now; 
+            string IPAddress = Request.UserHostAddress; 
+            string browserClient = Request.UserAgent;
 
+            var entry = db.SearchRequests.Create();
+
+            entry.Request = q;
+            entry.IPAddress = IPAddress;
+            entry.Timestamp = timestamp;
+            entry.BrowserClient = browserClient;
+            
+            db.SearchRequests.Add(entry);
+            db.SaveChanges();
 
             WebRequest request = WebRequest.Create(url); //send request
 
