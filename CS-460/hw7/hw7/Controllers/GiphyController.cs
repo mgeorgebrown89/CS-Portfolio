@@ -5,11 +5,14 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using hw7.Models;
 
 namespace hw7.Controllers
 {
     public class GiphyController : Controller
     {
+        private SearchRequestContext db = new SearchRequestContext();
+
         // GET: Search
         public ActionResult Index()
         {
@@ -24,6 +27,9 @@ namespace hw7.Controllers
 
             //Giphy API
             string url = "https://api.giphy.com/v1/gifs/search?api_key=" + GiphyAPIKey + "&q=" + q + "&limit=" + limit + "&rating=g";
+
+            //logging requests
+
 
             WebRequest request = WebRequest.Create(url); //send request
 
