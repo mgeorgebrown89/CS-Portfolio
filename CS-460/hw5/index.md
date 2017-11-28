@@ -60,7 +60,7 @@ END
 
 I also ran a testQuery.sql file `SQL SELECT * FROM DMVForms;` to make sure the entries were correctly inserted into the table. Below is a screenshot.
 
-![Test Query](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw5/testQuery.PNG)
+![Test Query](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/testQuery.PNG)
 
 #### Step 5: Model Class and Database Context Class
 Now I created the model class and the context class in the DAL folder. Here is my model class code:
@@ -342,13 +342,13 @@ And here is the page for creating a new
 Here are some screenshots of the working site:
 
 ##### The Home Page
-![Home Page]((https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw5/homepage.PNG)
+![Home Page]((https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/homepage.PNG)
 ##### The Current Requests Page
-![Current Requests](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw5/preCreate.PNG)
+![Current Requests](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/preCreate.PNG)
 ##### The Create Page
-![Create](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw5/create.PNG)
+![Create](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/create.PNG)
 ##### The New Entry
-![New Entry](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw5/newEntry.PNG)
+![New Entry](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/newEntry.PNG)
 
 #### Step 10: Portfolio
 Check.

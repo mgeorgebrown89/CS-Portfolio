@@ -7,7 +7,7 @@ Layout: default
 #### Step 1: Create an Empty MVC project.
 This first step was pretty self-explanatory but still a little daunting. Its very tempting to just use a template, but I did the whole thing from scratch.
 
-![Project Creation](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw4/creationEmptyProj.PNG)
+![Project Creation](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/creationEmptyProj.PNG)
 
 #### Step 2: Implement Feature Branches
 Now we begin feature branching. I made a feature branch for each of the three pages we made.
@@ -24,7 +24,7 @@ $ git checkout hw4
 
 then, I created the skeleton for my home page:
 
-![Early Beginning](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw4/earlybeginning.PNG)
+![Early Beginning](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/earlybeginning.PNG)
 
 Eventually, I applied some more Bootstrap things to make it look better. Also included are the @Html.Actionlinks.
 
@@ -49,7 +49,7 @@ Eventually, I applied some more Bootstrap things to make it look better. Also in
 
 Here is a screenshot of it in action:
 
-![Home Page example](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw4/homepageexample.PNG)
+![Home Page example](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/homepageexample.PNG)
 
 #### Step 4: Page 1. Form GET and Request Objects
 
@@ -113,7 +113,7 @@ Here is the associated C# code in the Page1 controller:
 
 And here is a screen shot of Page1 in action:
 
-![Page 1](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw4/page1.PNG)
+![Page 1](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/page1.PNG)
 
 #### Step 5: Page 2. HTML POST and FormCollection.
 Now we had to do the same thing (in my case, the temperature converter), but instead use a `FormCollection` object and use HTML `POST` in the HTML form. After writing the code for the parameterless GET controller action method, I wrote the one parameter POST action method. It is displayed below:
@@ -165,7 +165,7 @@ Now we had to do the same thing (in my case, the temperature converter), but ins
 
 Here is my Temperature Converter 2.0 in action:
 
-![Temperature Coverter 2.0](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw4/tempconv2.PNG)
+![Temperature Coverter 2.0](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/tempconv2.PNG)
 
 #### Step 6: Page3. The Loan Calculator and Model Binding.
 
@@ -243,7 +243,7 @@ Here is the binded controller method:
 
 Here is the page in action:
 
-![Page 3](https://mgeorgebrown89.github.io/CS-Portfolio/CS 460/hw4/page3loancalc.PNG)
+![Page 3](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/page3loancalc.PNG)
 
 #### Step 7: Portfolio
 
