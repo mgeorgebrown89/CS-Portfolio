@@ -9,7 +9,7 @@ Layout: default
 
 For this step, I just created the basic skeleton for the landing/home page for my Gif searching application. For this homework assignment, we are required to only have one page and use AJAX to only reload a portion of the site. Here is a screenshot of the homepage:
 
-![homepage](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/7/homepage.PNG)
+![homepage](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw7/homepage.PNG)
 
 #### Step 2: Register as Developer with Giphy
 
@@ -119,9 +119,9 @@ function displayGifs(response) {
 
 I had originally tried to display the still image first, and then when the user clicked on it, it would change to the animated gif, but I couldn't get this to work in the time alloted either, so there may be some residual code or comments refering to those still image attempts, but this functions to display the gifs. Here is a screen shot of a search for some cat gifs:
 
-![Before](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/7/gifsearchbefore.PNG)
+![Before](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw7/gifsearchbefore.PNG)
 
-![After](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/7/gifsearchafter.PNG)
+![After](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw7/gifsearchafter.PNG)
 (Obviously, these images are stills, because its a screenshot.)
 
 #### Step 4: Static Content and CSS
