@@ -13,8 +13,11 @@ $("#SearchButton").click(search); //new search
 function search() {
     var q = $("#SearchText").val();
     var limit = $("#limit").val();
+    var rating = $("#rating").val();
 
-    var source = "gif/searcher/" + page + "?q=" + q + "&limit=" + limit;
+    console.log(rating);
+
+    var source = "gif/searcher/" + page + "?q=" + q + "&limit=" + limit + "&rating=" + rating;
     console.log(source);
 
     $.ajax({

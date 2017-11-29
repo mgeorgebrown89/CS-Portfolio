@@ -24,9 +24,10 @@ namespace hw7.Controllers
             string GiphyAPIKey = System.Web.Configuration.WebConfigurationManager.AppSettings["GiphyAPIKey"];//get api key from outside repo
             string q = Request.QueryString["q"];//user's search
             string limit = Request.QueryString["limit"];//how many gifs to display
+            string rating = Request.QueryString["rating"];//rating of gifs
 
             //Giphy API
-            string url = "https://api.giphy.com/v1/gifs/search?api_key=" + GiphyAPIKey + "&q=" + q + "&limit=" + limit + "&rating=g";
+            string url = "https://api.giphy.com/v1/gifs/search?api_key=" + GiphyAPIKey + "&q=" + q + "&limit=" + limit + "&rating="+ rating;
 
             //logging requests
             DateTime timestamp = DateTime.Now; 

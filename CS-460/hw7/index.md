@@ -258,5 +258,10 @@ namespace hw7.Models
 }
 ```
 
+##### Demo
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=yLifmMgI_Cc" target="_blank"><img src="http://img.youtube.com/vi/yLifmMgI_Cc/0.jpg" 
+alt="Homework 7 Demo" width="240" height="180" border="10" /></a>
+
 #### Step 7: Portfolio
 Got it. 

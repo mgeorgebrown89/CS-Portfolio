@@ -17,6 +17,14 @@
         </div>
         <label for="limit" class="label label-primary">How many?</label>
         <input id="limit" name="limit" type="number" min="1" max="20" step="1" value="1" />
+        <label for="rating" class="label label-primary">Rating?</label>
+        <select id="rating" name="rating">
+            <option value="y">Youth</option>
+            <option value="g">G</option>
+            <option value="pg">PG</option>
+            <option value="pg-13">PG-13</option>
+        </select>
+
         @*Buttom to submit search request.*@
         <input id="SearchButton" name="SearchButton" type="button" value="Search" class="btn btn-lg btn-primary" />
     </form>
