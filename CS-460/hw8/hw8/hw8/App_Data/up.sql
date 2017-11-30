@@ -3,7 +3,7 @@ CREATE TABLE dbo.Artists
 (
 	ArtistID		INT Identity (1,1) NOT NULL,
 	Name			NVARCHAR(64)  NOT NULL,
-	BirthDate		DateTime NOT NULL,
+	BirthDate		NVARCHAR(64) NOT NULL,
 	BirthCity		NVARCHAR(64) NOT NULL,
 	
 	CONSTRAINT [PK_dbo.Artists] PRIMARY KEY CLUSTERED (ArtistID ASC)
@@ -49,10 +49,10 @@ CREATE TABLE dbo.Classifications
 
 -- Insertions
 INSERT INTO dbo.Artists(Name,BirthDate,BirthCity) VALUES 
-	('M C Escher','1898-06-17 00:00:00', 'Leeuwarden, Netherlands'),
-	('Leonardo Da Vinci','1519-05-02 00:00:00','Vinci, Italy'),
-	('Hatip Mehmed Efendi','1680-11-18','Unknown'),
-	('Salvador Dali','1904-05-11','Figueres,Spain');
+	('M C Escher','June 17, 1898', 'Leeuwarden, Netherlands'),
+	('Leonardo Da Vinci','May 2, 1519','Vinci, Italy'),
+	('Hatip Mehmed Efendi','November 11, 1680','Unknown'),
+	('Salvador Dali','May 11, 1904','Figueres,Spain');
 
 INSERT INTO dbo.Artworks (Title, ArtistID) VALUES
 ('Circle Limit III','1'),
