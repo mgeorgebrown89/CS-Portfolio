@@ -87,6 +87,7 @@ namespace hw8.Controllers
                 editArtist.Name = collection["Name"];
                 editArtist.BirthCity = collection["BirthCity"];
                 editArtist.BirthDate = collection["BirthDate"];
+                db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
