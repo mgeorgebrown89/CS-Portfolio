@@ -206,6 +206,8 @@
     <Content Include="Views\Artists\Classifications.cshtml" />
     <Content Include="Views\Artists\Create.cshtml" />
     <Content Include="Views\Artists\Delete.cshtml" />
+    <Content Include="Views\Artists\Edit.cshtml" />
+    <Content Include="Views\Artists\Details.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

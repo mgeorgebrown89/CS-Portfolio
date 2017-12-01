@@ -35,7 +35,8 @@ namespace hw8.Controllers
         // GET: Artists/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var artist = db.Artists.Find(id);
+            return View(artist);
         }
 
         // GET: Artists/Create
@@ -50,6 +51,7 @@ namespace hw8.Controllers
         {
             try
             {
+
                 var newArtist = db.Artists.Create();
 
                 newArtist.Name = collection["Name"];
@@ -70,7 +72,8 @@ namespace hw8.Controllers
         // GET: Artists/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var artist = db.Artists.Find(id);
+            return View(artist);
         }
 
         // POST: Artists/Edit/5
@@ -79,7 +82,11 @@ namespace hw8.Controllers
         {
             try
             {
-                // TODO: Add update logic here
+                var editArtist = db.Artists.Find(id);
+
+                editArtist.Name = collection["Name"];
+                editArtist.BirthCity = collection["BirthCity"];
+                editArtist.BirthDate = collection["BirthDate"];
 
                 return RedirectToAction("Index");
             }
@@ -92,7 +99,8 @@ namespace hw8.Controllers
         // GET: Artists/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var artists = db.Artists.Where(a => a.ArtistID == id).FirstOrDefault();
+            return View(artists);
         }
 
         // POST: Artists/Delete/5
@@ -101,7 +109,9 @@ namespace hw8.Controllers
         {
             try
             {
-                // TODO: Add delete logic here
+                var artist = db.Artists.Find(id);
+                db.Artists.Remove(artist);
+                db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
