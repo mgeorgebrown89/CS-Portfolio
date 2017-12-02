@@ -7,6 +7,8 @@ Layout: default
 
 #### Step 1: New MVC App. New Feature Branch.
 
+
+
 #### Step 2: Domain Model
 
 #### Step 3: Seed Data into Tables
