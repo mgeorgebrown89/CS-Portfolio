@@ -49,10 +49,10 @@ CREATE TABLE dbo.Classifications
 
 -- Insertions
 INSERT INTO dbo.Artists(Name,BirthDate,BirthCity) VALUES 
-	('M C Escher','June 17, 1898', 'Leeuwarden, Netherlands'),
-	('Leonardo Da Vinci','May 2, 1519','Vinci, Italy'),
-	('Hatip Mehmed Efendi','November 11, 1680','Unknown'),
-	('Salvador Dali','May 11, 1904','Figueres,Spain');
+	('M C Escher','06/17/1898', 'Leeuwarden, Netherlands'),
+	('Leonardo Da Vinci','05/02/1519','Vinci, Italy'),
+	('Hatip Mehmed Efendi','11/11/1680','Unknown'),
+	('Salvador Dali','05/11/1904','Figueres,Spain');
 
 INSERT INTO dbo.Artworks (Title, ArtistID) VALUES
 ('Circle Limit III','1'),

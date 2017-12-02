@@ -24,6 +24,11 @@
             </div>
         </div>
 
+        @if (TempData["testmsg"] != null)//this is where we display the message box for date out of bounds
+        {
+            @Html.Raw(TempData["testmsg"])
+        }
+
         <div class="form-group">
             @Html.LabelFor(model => model.BirthDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">

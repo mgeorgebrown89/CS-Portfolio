@@ -87,10 +87,47 @@ namespace hw8.Controllers
                 editArtist.Name = collection["Name"];
                 editArtist.BirthCity = collection["BirthCity"];
                 editArtist.BirthDate = collection["BirthDate"];
+
+                if (collection["Name"].Length > 50) //attribute checking for Name length
+                {
+                    TempData["testmsg"] = "<script>alert('Name cannot be more than 50 characters!');</script>";
+                    return RedirectToAction("Edit");
+                }
+
+                //attribute checking for date of birth
+                string[] dob = editArtist.BirthDate.Split('/');
+
+                int birthYear = Int32.Parse(dob[2]);
+                int birthMonth = Int32.Parse(dob[0]);
+                int birthDay = Int32.Parse(dob[1]);
+
+                int yyyy = DateTime.Now.Year;
+                int mm = DateTime.Now.Month;// jan is month 0
+                int dd = DateTime.Now.Day;
+
+                if (birthYear > yyyy)
+                {
+                    TempData["testmsg"] = "<script>alert('Are you from the future?');</script>";
+                    return View();
+                }
+                else if (birthYear == yyyy && birthMonth > mm)
+                {
+                    TempData["testmsg"] = "<script>alert('Are you from the future?');</script>";
+                    return View();
+                }
+                else if (birthYear == yyyy && birthMonth == mm && birthDay > dd)
+                {
+                    TempData["testmsg"] = "<script>alert('Wait a minute, you're not born yet.');</script>";
+                    return View();
+                }
+
                 db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
+
+
+
             catch
             {
                 return View();
