@@ -416,5 +416,10 @@ And here is the JSON in the controller:
         }
 ```
 
+##### Demo
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=A9c7KJ_OIcE" target="_blank"><img src="http://img.youtube.com/vi/A9c7KJ_OIcE/0.jpg" 
+alt="Homework 7 Demo" width="240" height="180" border="10" /></a>
+
 #### Step 9: Portfolio
 Check.
