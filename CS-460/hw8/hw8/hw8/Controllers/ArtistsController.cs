@@ -108,17 +108,17 @@ namespace hw8.Controllers
                 if (birthYear > yyyy)
                 {
                     TempData["testmsg"] = "<script>alert('Are you from the future?');</script>";
-                    return View();
+                    return RedirectToAction("Edit");
                 }
                 else if (birthYear == yyyy && birthMonth > mm)
                 {
                     TempData["testmsg"] = "<script>alert('Are you from the future?');</script>";
-                    return View();
+                    return RedirectToAction("Edit");
                 }
                 else if (birthYear == yyyy && birthMonth == mm && birthDay > dd)
                 {
                     TempData["testmsg"] = "<script>alert('Wait a minute, you're not born yet.');</script>";
-                    return View();
+                    return RedirectToAction("Edit");
                 }
 
                 db.SaveChanges();

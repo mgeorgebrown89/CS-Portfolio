@@ -291,9 +291,130 @@ Here are the controller methods:
 
 #### Step 7: Attribute Checking 
 
-I forgot about this part until I started typing this up!
+I forgot about this part until I started typing this up! Here is the code in my ArtistsController:
+
+```cs
+ // POST: Artists/Edit/5
+        [HttpPost]
+        public ActionResult Edit(int id, FormCollection collection)
+        {
+            try
+            {
+                var editArtist = db.Artists.Find(id);
+
+                editArtist.Name = collection["Name"];
+                editArtist.BirthCity = collection["BirthCity"];
+                editArtist.BirthDate = collection["BirthDate"];
+
+                if (collection["Name"].Length > 50) //attribute checking for Name length
+                {
+                    TempData["testmsg"] = "<script>alert('Name cannot be more than 50 characters!');</script>";
+                    return RedirectToAction("Edit");
+                }
+
+                //attribute checking for date of birth
+                string[] dob = editArtist.BirthDate.Split('/');
+
+                int birthYear = Int32.Parse(dob[2]);
+                int birthMonth = Int32.Parse(dob[0]);
+                int birthDay = Int32.Parse(dob[1]);
+
+                int yyyy = DateTime.Now.Year;
+                int mm = DateTime.Now.Month;// jan is month 0
+                int dd = DateTime.Now.Day;
+
+                if (birthYear > yyyy)
+                {
+                    TempData["testmsg"] = "<script>alert('Are you from the future?');</script>";
+                    return View();
+                }
+                else if (birthYear == yyyy && birthMonth > mm)
+                {
+                    TempData["testmsg"] = "<script>alert('Are you from the future?');</script>";
+                    return View();
+                }
+                else if (birthYear == yyyy && birthMonth == mm && birthDay > dd)
+                {
+                    TempData["testmsg"] = "<script>alert('Wait a minute, you're not born yet.');</script>";
+                    return View();
+                }
+
+                db.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+
+
+
+            catch
+            {
+                return View();
+            }
+        }
+```
 
 #### Step 8: Genre Buttons
+
+More AJAX. Ugh, although actually what gave me the most trouble was the LINQ queries. Here is the foreach loop for generating the buttons:
+
+```cs
+ <div class="col-md-6">
+        <div class="btn-group">
+           @foreach (var item in Model.ToList())
+           {
+            <button class="btn btn-primary" onclick="Ajax('@item.GenreID');">@item.Name</button>
+           }
+        </div>
+    </div>
+```
+And here is the ajax call in javascript:
+
+```js
+function Ajax(id) {
+    var source = "/Home/Genre/" + id;
+    console.log(source);
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+        data: { id: id },
+        url: source,
+        success: displayResults,
+        error: errorOnAjax
+    });
+}
+```
+
+And here is the JSON in the controller:
+
+```cs
+ public ActionResult Index()
+        {
+            var genres = db.Genres.ToList();
+            return View(genres);
+        }
+
+        public JsonResult Genre(int id)
+        {
+            var works = db.Genres.Find(id)
+                                 .Classifications
+                                 .ToList()
+                                 .OrderBy(t => t.Artwork.Title)
+                                 .Select(a => new { aw = a.ArtworkID, awa = a.Artwork.ArtistID })
+                                 .ToList();
+
+            string[] artworkCreator = new string[works.Count()];
+            for (int i = 0; i < artworkCreator.Length; ++i)
+            {
+                artworkCreator[i] = $"<ul>{db.Artworks.Find(works[i].aw).Title} by {db.Artists.Find(works[i].awa).Name}</ul>";
+            }
+            var data = new
+            {
+                arr = artworkCreator
+            };
+            
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+```
 
 #### Step 9: Portfolio
 Check.
