@@ -13,7 +13,7 @@ This step required us to start with a new MVC application. This assignment is ba
 
 We were given a data set to work with a create a domain model and ER Diagram from. Here is my ER diagram:
 
-![ER Diagram](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw8/hw8-ERDiagram.pnd)
+![ER Diagram](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw8/hw8-ERDiagram.png)
 
 #### Step 3: Seed Data into Tables
 
@@ -186,6 +186,8 @@ And here is the view of artists:
 </table>
 
 ```
+
+![Artist List](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw8/artistsList.PNG)
 
 #### Step 5: Commit to local Repo
 
@@ -415,6 +417,8 @@ And here is the JSON in the controller:
             return Json(data, JsonRequestBehavior.AllowGet);
         }
 ```
+
+![Home Page Buttons](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw8/homePageButtons.PNG)
 
 ##### Demo
 
