@@ -126,8 +126,6 @@ namespace hw8.Controllers
                 return RedirectToAction("Index");
             }
 
-
-
             catch
             {
                 return View();
