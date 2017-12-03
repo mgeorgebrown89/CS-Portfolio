@@ -5,6 +5,8 @@ Layout: default
 ## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 8
 ##### [Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW8.html) 
 
+[The Final, Deployed Site](http://mgeorgebrown89-hw9.azurewebsites.net)
+
 #### Step 1: New MVC App. New Feature Branch.
 
 This step required us to start with a new MVC application. This assignment is based on last year's final, so some of the steps might not make sense outside of that context. We are told that we can use all tools at our disposal, short of search the internet, so using scaffolded code is exceptable. 
