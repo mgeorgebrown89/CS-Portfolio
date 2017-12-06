@@ -1,4 +1,6 @@
-﻿var ajax_call = function(id) {
+﻿
+
+function Ajax(id) {
 
     $.ajax({
         type: "GET",
@@ -10,9 +12,9 @@
 };
 
 
-var interval = 1000 * 5; // where X is your timer interval in X seconds
+//var interval = 1000 * 5; // where X is your timer interval in X seconds
 
-window.setInterval(ajax_call, interval);
+//window.setInterval(ajax_call, interval);
 
 function displayResults(data) {
     console.log("Success!");
