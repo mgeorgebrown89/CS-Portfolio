@@ -34,7 +34,9 @@ namespace cs460Final.Controllers
                 return HttpNotFound();
             }
 
+            var bids = db.Items.Find(id).Bids.FirstOrDefault().Buyer.Name.ToString();
 
+            ViewBag.BuyerName = bids;
 
             return View(item);
         }
