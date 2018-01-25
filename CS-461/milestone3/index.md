@@ -2,7 +2,8 @@
 Title: CS 461 - Milestone 3.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 461](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461) - Milestone 3 ### Populate Product Backlog, Backlog Grooming, Scrum Agile Processes, Team Project Inception, Individual Project Ideas
+## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 461](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461) - Milestone 3
+### Populate Product Backlog, Backlog Grooming, Scrum Agile Processes, Team Project Inception, Individual Project Ideas
 #### [Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/t2/M3.html)
 
 For Milestone 3, we practiced more scrum and agile processes on the class project, went through an inception phase for our team project, and proposed initial ideas for our individual projects.
@@ -70,17 +71,20 @@ We just needed two rudimentary ideas for our team projects.
 | A mobile app that uses the Elimination Framework and API that lets users manage their account and play in elimination-based games with other users.  | iOs | Swift |
 | A mobile app that uses a flashcard system to test users' knowledge of subjects the want to learn (like foreign languages or human anatomy). | iOs | Swift |
 
-##### 
+##### Alex
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
+| blah | blahblah | blahblah |
 
-##### 
-
-| Idea | Platform | Language |
-| ---- | -------- | -------- |
-
-##### 
+##### Hannah
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
+| blah | blahblah | blahblah |
+
+##### Blake
+
+| Idea | Platform | Language |
+| ---- | -------- | -------- |
+| blah | blahblah | blahblah |
