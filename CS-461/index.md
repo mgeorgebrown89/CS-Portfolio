@@ -10,7 +10,7 @@ I'm spending more of my time on the project, rather than blogging about it.
 
 1. [Milestone 1](milestone1): Team Establishment, Project Brainstorming
 2. [Milestone 2](milestone2): Class Project Inception, Team Project Ideas Refining, Practice Git Workflow
-3. [Milestone 3](milestone3): 
+3. [Milestone 3](milestone3): Populate Product Backlog, Backlog Grooming, Scrum Agile Processes, Team Project Inception, Individual Project Ideas
 
 ### Repository
 

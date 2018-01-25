@@ -84,36 +84,37 @@ We needed to think more about our project ideas, choose two, and then answer som
 ```
 Study Buddy App
 
-	A study aide for people that would incorporate an AI API to use a chatbot to quiz them and flashcards which would use an algorithm to determine how often a card appears based on user feedback. 
+A study aide for people that would incorporate an AI API to use a chatbot to quiz them and flashcards which would use an algorithm to determine how often a card appears based on user feedback. 
 
-	Flashcard system: A user answers the card (either from a list of subjects, but we'll stick to just Human Anatomy and Physiology for now, or self-generated) and then rates how well they know the answer on a scale of 1-5, which then determines the frequenct with which the card is presented again. This attempts to turn short-term memory into long-term memory. 
+Flashcard system: A user answers the card (either from a list of subjects, but we'll stick to just Human Anatomy and Physiology for now, or self-generated) and then rates how well they know the answer on a scale of 1-5, which then determines the frequenct with which the card is presented again. This attempts to turn short-term memory into long-term memory. 
 
-	Chat-bot: An interface to facilitate a studying session, incorporating the flashcard system (and possibly other study techniques.)
-    Using a chat-bot is new to these kind of apps. There are study aides the have real-life tutors, but those are expensive and our idea could be much cheaper. 
+Chat-bot: An interface to facilitate a studying session, incorporating the flashcard system (and possibly other study techniques.) Using a chat-bot is new to these kind of apps. There are study aides the have real-life tutors, but those are expensive and our idea could be much cheaper. 
 	
-	Its worth doing because it can help all people from all socioeconomic statuses have academic success. Its convienient. 
+Its worth doing because it can help all people from all socioeconomic statuses have academic success. Its convienient. 
 
-	We would need a deep learning API like Watson or Microsoft Azure Cognitive Services. 
+We would need a deep learning API like Watson or Microsoft Azure Cognitive Services. 
 
-	Algorithmic content is the flashcards system. 
+Algorithmic content is the flashcards system. 
 	
-	We rate it a 7 overall, but really 6-8 depending on how many features we would implement.  
-    ```
+We rate it a 7 overall, but really 6-8 depending on how many features we would implement.  
+```
+
 This was our new idea.
+
 ```
 Police Speed Prevention App
 
-	An application for police officers to record and upload incidents of speeding and use machine learning to predict likely areas for repeated speeding offences and good places to patrol in order to increase public safety. 
+An application for police officers to record and upload incidents of speeding and use machine learning to predict likely areas for repeated speeding offences and good places to patrol in order to increase public safety. 
 
-	It would be specific to speeding (for now). There are programs already like this, but are more generalized and it sounds like there's no concensus on whether they work or not. 
+It would be specific to speeding (for now). There are programs already like this, but are more generalized and it sounds like there's no concensus on whether they work or not. 
 	
-	Its worth doing because it would increase public safety as well as police revenue. 
+Its worth doing because it would increase public safety as well as police revenue. 
 
-	We would need as machine learning API as well as google maps API. 
+We would need as machine learning API as well as google maps API. 
 
-	The algorithmic content is stuff like making graphs, etc. 
+The algorithmic content is stuff like making graphs, etc. 
 
-	We rate this a 6. 
+We rate this a 6. 
 
 ```
 
@@ -121,16 +122,20 @@ After all of this, we actually come up with *another* new idea, and this is actu
 
 ```
 Assassins
-
-	An application to host and manage users (assassins) and games and their rules. Individual projects 	would interact with this application to actual play out specific games. A user recieves a picture of their target. Their target also has a target, who has a target, etc. until the last user has the original user as their target. They would use their phone (somehow) to eliminate their target. This could be done with some sort of bluetooth proximity, line of sight, or picture recognition, or some combination. Other rules (power-ups, etc) could be implemented incrementally. 
-
-	This idea is original in that it hasn't been done this thoroughly before. There is one mobile app with this game, but it requires a human moderator to determine if the elimination is successful or not. Our project would remove the subjectivity of a human moderator. 
 	
-	This idea is worth doing and not boring because it would be really fun. It is a game after all.
+An application to host and manage users (assassins) and games and their rules. Individual projects 	would interact with this application to actually play out specific games. A user recieves a picture of their target. Their target also has a target, who has a target, etc. until the last user has the original user as their target. They would use their phone (somehow) to eliminate their target. This could be done with some sort of bluetooth proximity, line of sight, or picture recognition, or some combination. Other rules (power-ups, etc) could be implemented incrementally. 
 
-	We would need to figure out how to use different features of smartphones to figure out the elimination mechanics. Also we will look into using a cognitive service to match photots taken of targets. 
+This idea is original in that it hasn't been done this thoroughly before. There is one mobile app with this game, but it requires a human moderator to determine if the elimination is successful or not. Our project would remove the subjectivity of a human moderator. 
+	
+This idea is worth doing and not boring because it would be really fun. It is a game after all.
 
-	We could use algorithmic content to initially establish who has what target. If there are repeat players from past games, their stats could affect how they are placed within the circle of Assasssins. 
+We would need to figure out how to use different features of smartphones to figure out the elimination mechanics. Also we will look into using a cognitive service to match photots taken of targets. 
 
-	Topic rating: 6?
+We could use algorithmic content to initially establish who has what target. If there are repeat players from past games, their stats could affect how they are placed within the circle of Assasssins. 
+
+Topic rating: 6?
 ```
+
+#### Task 3: Practice Git Workflow
+
+It seems trivial at this stage, but it is helpful. 
