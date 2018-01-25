@@ -8,8 +8,9 @@ Layout: default
 While in CS 460 we were required to make a portfolio, for CS 461 and CS 462 were are not, so if this doesn't seem finished, its because
 I'm spending more of my time on the project, rather than blogging about it. 
 
-1. [Milestone 1](milestone1): stuff
-2. [Milestone 2](milestone2): stuff
+1. [Milestone 1](milestone1): Team Establishment, Project Brainstorming
+2. [Milestone 2](milestone2): Class Project Inception, Team Project Ideas Refining, Practice Git Workflow
+3. [Milestone 3](milestone3): 
 
 ### Repository
 
