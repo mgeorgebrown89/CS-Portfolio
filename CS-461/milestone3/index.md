@@ -38,6 +38,27 @@ This is when we decided to go with the elimination (assassins) game application 
 For developers who want to create elmination-based live-action mobile games, the Elimination App and API is a server-side application that allows for an admin to make a game and set rules and invite other users to join the game. The application will store user accounts, skills and stats from previous and on-going games, as well as make decisions for furthering current games and setting up new ones. Unlike current methods for playing elmination-based live-action games, our product will remove the subjectivity that comes from a human moderator and human players determining a successful elimination and also make adding more rules to games easier and more fun.
 ```
 
+##### Needs and Features, Requirements
+
+```
+Needs:
+    -Database to store players, player stats, and game information.
+    -API that will allow developers to create games based on eliminating other players and building player stats.
+    -Web App to manage the game and players to make accounts and manage them.
+    
+Features:
+    -Create players to allow a user to manage their profile and level up their stats.
+    -Skills that will be used to calculate a players chance of successful attacks and traps.
+    -Items such as traps, range weapons, armor, anti-venom, theft
+    -Bunker time to hide from enemies. 
+    -Management tools to determine if eliminations are valid like photo recognition, line of sight, bluetooth.
+
+Requirements:
+    Non-functional:
+    -Need to use Json when passing data from server to client to decrease bandwith constraints.
+    -Game and player information should be stored using minimal amount of memory to conserve space.
+```
+
 #### Task 5: Individual Project Ideas
 
 We just needed two rudimentary ideas for our team projects. 
@@ -46,4 +67,20 @@ We just needed two rudimentary ideas for our team projects.
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
-| sfas | asfsafsa | asfasdas |
+| A mobile app that uses the Elimination Framework and API that lets users manage their account and play in elimination-based games with other users.  | iOs | Swift |
+| A mobile app that uses a flashcard system to test users' knowledge of subjects the want to learn (like foreign languages or human anatomy). | iOs | Swift |
+
+##### 
+
+| Idea | Platform | Language |
+| ---- | -------- | -------- |
+
+##### 
+
+| Idea | Platform | Language |
+| ---- | -------- | -------- |
+
+##### 
+
+| Idea | Platform | Language |
+| ---- | -------- | -------- |
