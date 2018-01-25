@@ -62,15 +62,15 @@ support
 
 ###### Use Case Diagram
 
-![Use Case Diagram](CS-Portfolio/CS-461/milestone2/use-case-diagram.jpg)
+![Use Case Diagram](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone2/use-case-diagram.jpg)
 
 ###### ER Diagram
 
-![ER Diagram](CS-Portfolio/CS-461/milestone2/er-diagram.jpg)
+![ER Diagram](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone2/er-diagram.jpg)
 
 ##### Architecture Drawing
 
-![Architecture Drawing](CS-Portfolio/CS-461/milestone2/architecture-diagram.jpg)
+![Architecture Drawing](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone2/architecture-diagram.jpg)
 
 ##### Vision Statement 0.9
 ```
@@ -115,7 +115,6 @@ We would need as machine learning API as well as google maps API.
 The algorithmic content is stuff like making graphs, etc. 
 
 We rate this a 6. 
-
 ```
 
 After all of this, we actually come up with *another* new idea, and this is actually what we are officially moving forward with for the rest of the year. I actually went ahead and wrote this up after-the-fact since we were already finished with this milestone. 

@@ -12,7 +12,7 @@ For Milestone 1, the main goal was getting into our assigned groups and figuring
 We tossed around a lot of ideas. Currently, our team name is et progressus, which is latin for "development of..."  Our motto is "Continuous Learning." 
 
 Here is a picture of our logo & letterhead:
-![logo/letterhead](CS-Portfolio/CS-461/milestone1/et progressus-logo-letterhead-black.png)
+![logo/letterhead](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone1/et progressus-logo-letterhead-black.png)
 
 We chose all this because we were originally thinking we were going to build a study aide application, but we may be changing this soon since we are most likely going a different direction with our project.
 
@@ -28,7 +28,7 @@ Our professor wanted hard copies of our work to go over when we met once a week.
 
 Our task was to figure out at least 5 hours during the week when we could meet. I used whenisgood.net to figure out the mutual openings in our class and works schedules and made a chart in Google Sheets. 
 
-![calendar](CS-Portfolio/CS-461/milestone1/et-progressus-Weekly-Schedule)
+![calendar](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone1/et-progressus-Weekly-Schedule)
 
 #### Task 5: Slack Team
 

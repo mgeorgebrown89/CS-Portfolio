@@ -30,7 +30,7 @@ This is when we decided to go with the elimination (assassins) game application 
 
 ##### Mindmap
 
-![Mindmap](CS-Portfolio/CS-461/milestone3/mindmap.png)
+![Mindmap](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone3/mindmap.png)
 
 ##### Vision Statement 0.1
 
