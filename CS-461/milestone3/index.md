@@ -75,15 +75,16 @@ We just needed two rudimentary ideas for our team projects.
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
-| Companion app for group project Elimination API. The app allows users to access and manage their account as well as play against other users and receive new targets in elimination games. | Native Android | Java |
-| Book barcode scanner app. The app allows you to scan a book’s barcode and then gives you reviews and possibly similar titles. Possibly using Goodreads API. | Native Android | Java |
-| House plant identification app. The app uses image recognition to identify plant species and return care instructions. | Native Android | Java |
+| Companion app for group project Elimination API. The app allows users to access and manage their account as well as play against other users and receive new targets in elimination games. | Android | Java |
+| Book barcode scanner app. The app allows you to scan a book’s barcode and then gives you reviews and possibly similar titles. Possibly using Goodreads API. | Android | Java |
+| House plant identification app. The app uses image recognition to identify plant species and return care instructions. | Android | Java |
 
 ##### Alex
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
-| blah | blahblah | blahblah |
+| A mobile app to manage tasks created by a user. Tasks could be created to ignore calls when person is in meeting or when using media, such as watching a video or listening to music. | Android | Kotlin/Java |
+|A mobile app to do construction takeoff from PDF house plans. It would produce linear footage for wall plates and studs for walls and plywood for floors and walls. | Android | Kotlin/Java |
 
 ##### Blake
 
