@@ -71,13 +71,15 @@ We just needed two rudimentary ideas for our team projects.
 | A mobile app that uses the Elimination Framework and API that lets users manage their account and play in elimination-based games with other users.  | iOs | Swift |
 | A mobile app that uses a flashcard system to test users' knowledge of subjects the want to learn (like foreign languages or human anatomy). | iOs | Swift |
 
-##### Alex
+##### Hannah
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
-| blah | blahblah | blahblah |
+| Companion app for group project Elimination API. The app allows users to access and manage their account as well as play against other users and receive new targets in elimination games. | Native Android | Java |
+| Book barcode scanner app. The app allows you to scan a book’s barcode and then gives you reviews and possibly similar titles. Possibly using Goodreads API. | Native Android | Java |
+| House plant identification app. The app uses image recognition to identify plant species and return care instructions. | Native Android | Java |
 
-##### Hannah
+##### Alex
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
