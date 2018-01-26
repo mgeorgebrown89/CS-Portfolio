@@ -68,8 +68,8 @@ We just needed two rudimentary ideas for our team projects.
 
 | Idea | Platform | Language |
 | ---- | -------- | -------- |
-| A mobile app that uses the Elimination Framework and API that lets users manage their account and play in elimination-based games with other users.  | iOs | Swift |
-| A mobile app that uses a flashcard system to test users' knowledge of subjects the want to learn (like foreign languages or human anatomy). | iOs | Swift |
+| A mobile app that uses the Elimination Framework and API that lets users manage their account and play in elimination-based games with other users.  | iOS | Swift |
+| A mobile app that uses a flashcard system to test users' knowledge of subjects the want to learn (like foreign languages or human anatomy). | iOS | Swift |
 
 ##### Hannah
 

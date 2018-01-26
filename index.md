@@ -4,7 +4,7 @@ layout: default
 ---
 # Portfolio Home.
 
-Welcome to my portfolio!
+Welcome to my portfolio! My personal website is [here](https://mgeorgebrown89.github.io/).
 
 ## About Me.
 
