@@ -2,15 +2,17 @@
 Title: CS 460 - Homework 6.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 6
+# [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 6
+## MVC App #3 | Pre-Existing Database
+### [Official Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW6.html)
 
-#### Step 1: Set Up the Database
+### Step 1: Set Up the Database
 First, we downloaded and extracted the AdventureWorks 2014 sample database to use with our homework 6 project. 
 
-#### Step 2: Entity Framework - Code First from Existing Database
+### Step 2: Entity Framework - Code First from Existing Database
 Next, we set up our project by using Entity Framework (Code First from Existing Database) to add the database to our project and reverse engineer all of the model classes for the Production subsystem only. After homework 5, this was actually pretty easy, and in some ways it was actually easier to set up since we could autogenerate the model classes. I just followed [this guide](https://msdn.microsoft.com/en-us/library/jj200620(v=vs.113).aspx) to set up my project. 
 
-#### Step 3: Feature 1: Browse Products
+### Step 3: Feature 1: Browse Products
 For this step, we needed to implement a storefront example, using the AdventureWorks database. I made a navbar with the four main categories. They each drop down to display their subcategories and by clicking them it takes the user to a list all the products within their subcategory. Here is the code for my navbar. (I realize I could have made this much shorter by using HTML helper methods and iterating through the categories to get the subcategories, but this was the first thing I implemented and it took me awhile to get the hang of using LINQ method syntax).
 
 
@@ -112,7 +114,7 @@ By now, I'd figured out LINQ a little better, and was using better queries. I ne
 
 ![Details](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw6/details.PNG)
 
-#### Step 4: Add Review
+### Step 4: Add Review
 Finally, we needed to add review functionality to our site. This gave me some trouble. I finally figured it out when I included the ProductID field in the form, but I didn't want the user to have to manually enter in the number before it would allow them to actually post their review. I realized that I wasn't actually passing a review object to the View in my GET method, so it wouldn't automatically have the ProductID when the user got their through the link from the details page of the product they wanted to review. I got it to work by actually passing the review object like so:
 ```cs
  public ActionResult Review(int? id)
@@ -165,10 +167,10 @@ Here is a pair of screenshots that show the review form filled in, and the corre
 
 And with that, I was done. Below is a video demo of my site.
 
-##### Demo
+#### Demo
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ReShEUasFF4" target="_blank"><img src="http://img.youtube.com/vi/ReShEUasFF4/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-#### Step 5: Portfolio
+### Step 5: Portfolio
 Got it.

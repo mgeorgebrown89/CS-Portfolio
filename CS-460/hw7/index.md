@@ -2,16 +2,17 @@
 Title: CS 460 - Homework 7.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 7
-##### [Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW7.html) 
+# [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 7
+## MVC APP #4 | Giphy API | JSON
+### [Official Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW7.html) 
 
-#### Step 1: Simple, Single-Page Web App
+### Step 1: Simple, Single-Page Web App
 
 For this step, I just created the basic skeleton for the landing/home page for my Gif searching application. For this homework assignment, we are required to only have one page and use AJAX to only reload a portion of the site. Here is a screenshot of the homepage:
 
 ![homepage](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw7/homepage.PNG)
 
-#### Step 2: Register as Developer with Giphy
+### Step 2: Register as Developer with Giphy
 
 The next step is pretty self explanatory. Once I registered, I recieved an API key. We then had to keep it out of our repo but still use it, which required us to use a .config file that was externel to our repo and change our Web.config file accordingly so that it would get it. Here is the corresponding code:
 
@@ -25,7 +26,7 @@ and in my actual AppSettingsSecrets.config file:
 </appSettings>
 ```
 
-#### Step 3: Gif Search with AJAX and JSON
+### Step 3: Gif Search with AJAX and JSON
 
 Here I made my first big mistake. I successfully made an application that allowed the user to search gifs and display them, but I did most of it in JavaScript, meaning that my API key was visible to the user, should they look for it. I basically used an AJAX call to get my API Key from a JsonResult method, then assembled the query with it, and used another AJAX call in my JavaScript. I had to redo this part of the assignment so that I used AJAX to pass the search terms, and then use my action controller method to assemble the GET request, keeping my API Key secret. Here is the relevent code:
 
@@ -124,11 +125,11 @@ I had originally tried to display the still image first, and then when the user 
 ![After](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw7/gifsearchafter.PNG)
 (Obviously, these images are stills, because its a screenshot.)
 
-#### Step 4: Static Content and CSS
+### Step 4: Static Content and CSS
 
 The biggest thing I did for this step was to change the layout page. I downloaded a bootstrap template and replaced the reference to bootstrap.css in the bundleConfig.cs file. This made the homepage darker and in my opinion sleeker. You can also see above in the displayGif function how the search results get displayed and styled. 
 
-#### Step 5: Additional Search Features
+### Step 5: Additional Search Features
 
 Here I added a number HTML element to allow the user to decide how many gifs to display. Probably not super practical, but I wanted to paginate originally, but could not succeed, so I thought this would suffice for now. I also added a select element to allow the user to display gifs by rating, y-pg13 only. Here is the code for that stuff:
 
@@ -258,10 +259,10 @@ namespace hw7.Models
 }
 ```
 
-##### Demo
+#### Demo
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=yLifmMgI_Cc" target="_blank"><img src="http://img.youtube.com/vi/yLifmMgI_Cc/0.jpg" 
 alt="Homework 7 Demo" width="240" height="180" border="10" /></a>
 
-#### Step 7: Portfolio
+### Step 7: Portfolio
 Got it. 

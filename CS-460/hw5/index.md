@@ -2,20 +2,22 @@
 Title: CS 460 - Homework 5.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 5
+# [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 5
+## MVC App #2 | Local Database
+### [Official Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW5.html)
 
-#### Step 1: Create an Empty MVC project.
+### Step 1: Create an Empty MVC project.
 This is the same as Homework 4. We couldn't use any pre-built code. I won't include a screenshot of it this time, since it's the same as the previous assignment. 
 
-#### Step 2: DMV Form
+### Step 2: DMV Form
 For this step, there wasn't really anything to do, but we looked at an Oregon DMV Address Change Request form.
 
-#### Step 3: DMV Form
+### Step 3: DMV Form
 For this step we examined the form and decided how we were going to break apart the form into the separate fields. I went with:
 
 ID, ODL, Full Legal Name, Street Address, City, State, Zip, Country (which I realize now should have been *county*, not country.)
 
-#### Step 4: Data Model
+### Step 4: Data Model
 This is where we created our first (local) database. I ran into a lot, I mean **A LOT** of problems with this, but I'm pleased to say I got it all done and working correctly. Here are my up.sql and down.sql files:
 
 ```sql
@@ -62,7 +64,7 @@ I also ran a testQuery.sql file `SQL SELECT * FROM DMVForms;` to make sure the e
 
 ![Test Query](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/testQuery.PNG)
 
-#### Step 5: Model Class and Database Context Class
+### Step 5: Model Class and Database Context Class
 Now I created the model class and the context class in the DAL folder. Here is my model class code:
 
 ```cs
@@ -113,7 +115,7 @@ namespace hw5b.DAL
 
 ```
 
-#### Step 6: Connection String
+### Step 6: Connection String
 This was pretty easy. I just used a local database so my connection string looks like this:
 
 ```xml
@@ -163,7 +165,7 @@ This was pretty easy. I just used a local database so my connection string looks
 
 I also have a HomeController, but you don't need to see that. It just returns a view, nothing special. 
 
-#### Step 8: Strongly Typed Views
+### Step 8: Strongly Typed Views
 Now we had to create the UI with razor. We needed two pages, one to create a page, and another to display all of the entries. The second part is what gave me the most trouble. I mean 4+ hours of acheiving nothing, but hey, I did it. Here is the index view of my DMVForm. This returns a view with the current requests from the database.
 
 ```cs
@@ -338,18 +340,17 @@ And here is the page for creating a new
 </div>
 ```
 
-#### Step 9: Demo the Site
+### Step 9: Demo the Site
 Here are some screenshots of the working site:
 
-##### The Home Page
+#### The Home Page
 ![Home Page]((https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/homepage.PNG)
-##### The Current Requests Page
+#### The Current Requests Page
 ![Current Requests](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/preCreate.PNG)
-##### The Create Page
+#### The Create Page
 ![Create](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/create.PNG)
-##### The New Entry
+#### The New Entry
 ![New Entry](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw5/newEntry.PNG)
 
-#### Step 10: Portfolio
+### Step 10: Portfolio
 Check.
-

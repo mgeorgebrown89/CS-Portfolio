@@ -2,17 +2,19 @@
 Title: CS 460 - Homework 4.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 4
+# [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 4
+## MVC App #1 | GET | POST | Model Binding
+### [Official Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW4.html)
 
-#### Step 1: Create an Empty MVC project.
+### Step 1: Create an Empty MVC project.
 This first step was pretty self-explanatory but still a little daunting. Its very tempting to just use a template, but I did the whole thing from scratch.
 
 ![Project Creation](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/creationEmptyProj.PNG)
 
-#### Step 2: Implement Feature Branches
+### Step 2: Implement Feature Branches
 Now we begin feature branching. I made a feature branch for each of the three pages we made.
 
-#### Step 3: Create a Home Page
+### Step 3: Create a Home Page
 I first branched into a new feature branch:
 
 ```bash 
@@ -51,7 +53,7 @@ Here is a screenshot of it in action:
 
 ![Home Page example](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/homepageexample.PNG)
 
-#### Step 4: Page 1. Form GET and Request Objects
+### Step 4: Page 1. Form GET and Request Objects
 
 Here we needed a form with at least two text fields and a submit button. We needed to `GET` a new page with the query strings, do something with them, and return a view with values from a `Request` object. I decided to implement the suggested temperature converter. 
 
@@ -115,7 +117,7 @@ And here is a screen shot of Page1 in action:
 
 ![Page 1](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/page1.PNG)
 
-#### Step 5: Page 2. HTML POST and FormCollection.
+### Step 5: Page 2. HTML POST and FormCollection.
 Now we had to do the same thing (in my case, the temperature converter), but instead use a `FormCollection` object and use HTML `POST` in the HTML form. After writing the code for the parameterless GET controller action method, I wrote the one parameter POST action method. It is displayed below:
 
 ```cs
@@ -167,7 +169,7 @@ Here is my Temperature Converter 2.0 in action:
 
 ![Temperature Coverter 2.0](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/tempconv2.PNG)
 
-#### Step 6: Page3. The Loan Calculator and Model Binding.
+### Step 6: Page3. The Loan Calculator and Model Binding.
 
 I decided to do a monthly loan calculator for page 3, since 99% of the time(not a real statistic) this is how someone pays back a loan. The main difference between page 3 and page 2 is that we needed to implement model binding, meaning we had parameters in the contorller methods that bind directly to the form element values. We also need to make our page robust, which I mostly did by using HTML `required`.  Here is the code for my HTML `POST` form:
 
@@ -245,6 +247,6 @@ Here is the page in action:
 
 ![Page 3](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw4/page3loancalc.PNG)
 
-#### Step 7: Portfolio
+### Step 7: Portfolio
 
 I entered everything here. Hopefully this is the right amount of code snippits -- not too much, not too little. I commented all of my code as well, but did not include that in the snippits. 

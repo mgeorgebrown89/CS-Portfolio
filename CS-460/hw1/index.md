@@ -2,12 +2,12 @@
 Title: CS 460 - Homework 1.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 1
-### Github | HTML | CSS | Bootstrap
+# [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 1
+## Github | HTML | CSS | Bootstrap
+### [Official Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW1.html)
+For homework 1, we created a set of webpages in HTML and CSS, utilizing Bootstrap libraries, all while learning how to use Git. 
 
-For homework 1, we are supposed to create a set of webpages in HTML and CSS, utilizing Bootstrap libraries, all while learning how to use Git. 
-
-#### Step 1: Git | Repository
+### Step 1: Git | Repository
 I downloaded the Git Bash since we're supposed to do everything from the command line this term (and the whole year). I first created a repository on Github. I don't remember what I originally named it -- I've since changed it several times, finally landing on CS-Repository. I then created my corresponding folder locally 
 ```bash 
    $ cd ~/Documents
@@ -25,7 +25,7 @@ I ran into some issues with line ending preferences:
 ```
 but more on that later.
 
-#### Step 2: Github | `pull` | `add` | `commit` | `push`
+### Step 2: Github | `pull` | `add` | `commit` | `push`
 Next, I added a `remote` to my local repository. 
 ```bash
 $ git remote add origin 
@@ -61,12 +61,12 @@ I also tested the `pull` command by editing a file on my Github account in the b
     * branch            master     -> FETCH_HEAD
     Already up-to-date.
 ```
-#### Step 3: HTML | CSS | Bootstrap | The Website
+### Step 3: HTML | CSS | Bootstrap | The Website
 The next step was to create a website using HTML and CSS. My experience with HTML was very limited, and my experience with CSS and Bootstrap was virutally nonexistent. I went through some basic tutorials and decided to make my website about my family, since the content didn't really matter, and I didn't have any other good ideas. I have a website for my DJ business (www.celebratewithcana.com) but I used squarespace, so it doesn't really teach anything about website design.
 
  Here is the link to my website. I'm not really happy with it. We are supposed to attempt to make a modern looking website, but mine definitely looks like its from 1997 or so. I may edit it from this point forward, but for now, here it is. 
-#### [The Brown Family Website](TheBrownFamilyWebsite)
-##### Website Requirement #1: Use Bootstrap | Demonstrate both single column and two or more column formatting
+### [The Brown Family Website](TheBrownFamilyWebsite)
+#### Website Requirement #1: Use Bootstrap | Demonstrate both single column and two or more column formatting
 
 I started by reading up on Bootstap, and decided to use the CDN rather than download it. I used Bootstrap mostly to utilize their grid system. I added this to my `<head>` part of the `michael.html` page 
 ```html
@@ -96,7 +96,7 @@ and then added this two make two columns of equal width.
           </div>
         </div>
 ```
-##### Website Requirement #2: Use your own CSS file
+#### Website Requirement #2: Use your own CSS file
 I made a CSS file, changing some aspects of my pages. Using the program "Brackets" made this really easy, as you can click on specific elements of HTML and add rules on your CSS page directly in the HTML editor. This actually helped me learn a lot about how HTML and CSS work together. 
 
 I played around with changing colors and font styles. I'm not a visual person, but I know when something looks bad, I just can't do much to fix it. I may try to make my business's website on my own later, but for now, this is what I've got. Here is an example from my CSS file:
@@ -110,7 +110,7 @@ I played around with changing colors and font styles. I'm not a visual person, b
 }
 ```
 
-##### Website Requirement #3: Navigation Bar or Menu
+#### Website Requirement #3: Navigation Bar or Menu
 I looked up Bootstrap's template for Navbars, and used this one:
 ```html
 	<script src="js/jquery-1.11.3.min.js"></script>
@@ -191,7 +191,7 @@ We also were required to make a table. I again used Bootstrap for this.
           </div>
 ```
 This worked pretty well. I did some weird things inside of the Bootstrap grid system. In certain views, the table container is actually bigger than the single column layout (also another requirement!) from Bootstrap. This was not something I was able to fix. 
-##### Website Requirement #5: Three kinds of lists
+#### Website Requirement #5: Three kinds of lists
 We also had to use one of each kind of list: `ul`, `ol`, and `dl`. I did each of these on different pages. First the unordered list, which I did on the `michael.html` page:
 ```html
 <p>Things Michael Likes:</p>
@@ -223,17 +223,17 @@ And finally, the description list, which is on the `nora.html` page:
                     </li>
                 </dl>
 ```
-##### Website Requirement #6: Consistantly Sylted Elements
+#### Website Requirement #6: Consistantly Sylted Elements
 I think I had moderate success with this, especially considering this was my first foray into HTML and CSS. I used my own CSS style to edit specific elements and ID tags in order to attempt to have a consistent color-scheme and rounded boxes. 
 
-##### Website Requirement #7: No Plagiarism!
+#### Website Requirement #7: No Plagiarism!
 We were required to write all of the code ourselves and not use a WYSIWYG designer, which I did not. I did everything in Brackets! 
 
-#### Step 4: Clone Your Repository
+### Step 4: Clone Your Repository
 At this time, I have not had success cloning my repository to my P: Drive at school. 
-#### Step 5: Github Pages | Portfolio 
+### Step 5: Github Pages | Portfolio 
 If you're reading this, I've succeeded in setting up my Portfolio on Github pages!
-#### Step 6: Blog Post
+### Step 6: Blog Post
 this is so meta. 
-#### Step 7: Print Grading Rubric with URL
+### Step 7: Print Grading Rubric with URL
 If you're reading this, I've succeed in printing the HW1 rubric and correctly copied down my URL! 

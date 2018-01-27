@@ -2,22 +2,21 @@
 Title: CS 460 - Homework 8.
 Layout: default
 ---
-## [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 8
-##### [Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW8.html) 
+# [Portfolio Home](https://mgeorgebrown89.github.io/CS-Portfolio) - [CS 460](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460) - Homework 8
+## MVC APP #5a | Multi-Table Relational Database
+### [Official Requirements](http://www.wou.edu/~morses/classes/cs46x/assignments/HW8.html) 
 
-[The Final, Deployed Site](http://mgeorgebrown89-hw9.azurewebsites.net)
-
-#### Step 1: New MVC App. New Feature Branch.
+### Step 1: New MVC App. New Feature Branch.
 
 This step required us to start with a new MVC application. This assignment is based on last year's final, so some of the steps might not make sense outside of that context. We are told that we can use all tools at our disposal, short of search the internet, so using scaffolded code is exceptable. 
 
-#### Step 2: Domain Model
+### Step 2: Domain Model
 
 We were given a data set to work with a create a domain model and ER Diagram from. Here is my ER diagram:
 
 ![ER Diagram](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw8/hw8-ERDiagram.png)
 
-#### Step 3: Seed Data into Tables
+### Step 3: Seed Data into Tables
 
 Then we had to make a script to make appropriate tables based on our ER diagram, and seed them with the examples from [this page](http://www.wou.edu/~morses/classes/cs46x/assignments/HW8_tables.html). Here is my up.sql script. This is the first half, which is the table creation:
 
@@ -111,7 +110,7 @@ GO
 
 I decided to make seperate Primary Key columns, because I thought it would be simpler, but in reality I think it just made my LINQ expressions that much more difficult to figure out. 
 
-#### Step 4: Menu Items
+### Step 4: Menu Items
 
 Then we needed to add menu buttons to the shared layout to display three views: Artists, Artworks, and Classifications. Each view should display a list. I used scaffolded code to generate an ArtistController and some views. Here are the buttons in my share layout:
 
@@ -191,11 +190,11 @@ And here is the view of artists:
 
 ![Artist List](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw8/artistsList.PNG)
 
-#### Step 5: Commit to local Repo
+### Step 5: Commit to local Repo
 
 This step is pretty self-explanatory and I'm assuming its for the sake of the final. 
 
-#### Step 6: CRUD
+### Step 6: CRUD
 
 Here we needed to implement CRUD functionality for Artists. I used the scaffolded views to create the create, details, edit, and delete views. 
 
@@ -293,7 +292,7 @@ Here are the controller methods:
         }
 ```
 
-#### Step 7: Attribute Checking 
+### Step 7: Attribute Checking 
 
 I forgot about this part until I started typing this up! Here is the code in my ArtistsController:
 
@@ -357,7 +356,7 @@ I forgot about this part until I started typing this up! Here is the code in my 
         }
 ```
 
-#### Step 8: Genre Buttons
+### Step 8: Genre Buttons
 
 More AJAX. Ugh, although actually what gave me the most trouble was the LINQ queries. Here is the foreach loop for generating the buttons:
 
@@ -422,10 +421,10 @@ And here is the JSON in the controller:
 
 ![Home Page Buttons](https://mgeorgebrown89.github.io/CS-Portfolio/CS-460/hw8/homePageButtons.PNG)
 
-##### Demo
+#### Demo
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=A9c7KJ_OIcE" target="_blank"><img src="http://img.youtube.com/vi/A9c7KJ_OIcE/0.jpg" 
 alt="Homework 7 Demo" width="240" height="180" border="10" /></a>
 
-#### Step 9: Portfolio
+### Step 9: Portfolio
 Check.
