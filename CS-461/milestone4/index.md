@@ -56,9 +56,8 @@ Now, its the fun stuff. We were told to "Spend quality time working on your team
             > Types incremented by range
             * Melee (within 5ft, not affected by armor)
             * Ranged (from further than 5ft)
-            * > Modified by Weapon Proficiency Skill
-                * Proximity
-                * Distanced (artillery)
+            * Distanced (like artillery, from anywhere)
+            > Modified by Weapon Proficiency Skill
         * Traps
             * Bombs (target only or bystanders)
             * Poison (disguised as items?)
