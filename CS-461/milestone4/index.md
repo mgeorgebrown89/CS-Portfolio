@@ -12,9 +12,13 @@ For Milestone 4, we practiced a condensed version of a full sprint iteration (mi
 
 We groomed our backlog and assigned some more tasks to each member of our team to add some features and functionality to our XC team site. Then we worked on our individual tasks. I worked on getting the most recent run of a particular athlete to display on their details page (at this point everything was still in Entity Framework's basic CRUD views). I learned (somewhat) how to do a Model-View-ViewModel. 
 
+---
+
 ### Task 2: Team Project Inception Phase II
 
 Now, its the fun stuff. We were told to "Spend quality time working on your team project." Below are the artifacts we came up with.
+
+---
 
 #### Needs, Features and Requirements
 
@@ -23,7 +27,7 @@ Now, its the fun stuff. We were told to "Spend quality time working on your team
     * API that will allow developers to create games based on eliminating other players and building player stats.
         * Developers to create games to test for us
     * Web App to manage the game and players to make accounts and manage them.
----
+    ---
 * ### Features
     * #### Player Creation
         * Profile Management
@@ -154,10 +158,43 @@ Now, its the fun stuff. We were told to "Spend quality time working on your team
             * required or optional
             * penalty for missing
                 * elimination, skill-loss, item-loss
-    
-   
----
+    ---
 * ### Requirements
     * #### Non-functional
         * Need to use **Json** when passing data from server to client to decrease bandwidth constraints.
         * Game and player information should be stored using minimal amount of memory to conserve space.
+---
+#### Overall Architecture Design
+![Overal Architecture Design](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone4/architecture-diagram.png)
+
+---
+
+#### Initial Modeling 
+* ### Initial Database Design
+![ER-Diagram](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone4/initial-database-design.png)
+
+* ### Use Cases
+![Overall-Use-Case](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone4/overall-use-case.png)
+![View-Use-Case](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone4/view-use-case-diagram.png)
+
+---
+#### Timeline and Release Plan
+
+---
+#### Epics/Features/User stories in Visual Studio Team Services
+Check.
+---
+#### Final Vision Statement
+> For people who want to create elimination-based live-action mobile games (like Assassin! or Humans Vs. Zombies), the Elimination Framework and API is an application that allows for an admin to make a game and set rules and invite other users to join the game. Elimination-based live action games involve players being assigned other players as targets and then proceeding to attempt to eliminate their target/targets, traditionally with mock-projectiles (like Nerf-guns or balled up socks), by whatever rules are established for the specific game, until either the last player/team is remaining. Unlike current methods for playing elimination-based live-action games, our full website will remove the subjectivity that comes from a human moderator and human players determining a successful elimination and also make adding more rules and features (like player skill modifiers, a player inventory, and methods of elimination) to games easier and more fun. The application will store user accounts, skills, and stats from previous and on-going games, as well as make decisions for furthering current games and setting up new ones.
+---
+#### Identification of Risks
+* ### Photo-Recognition
+    * It may be too difficult to implement or it may not be accurate enough to work. It also may be to slow and ruin the immersion.
+    * A player could possibly cheat this system by taking a picture of a picture or resend a previously taken photo the resulted in a successful elimination.    
+* ### GPS
+    A trap may be set in the bottom floor of a building but go off if someone passes by it on the second floor. 
+* ### Legality 
+    * Some might call the kind of behaviors expressed while playing elimination-based live-action games "stalker-ish" or "creepy." 
+    * There may be misunderstandings that we could be held liable for...
+* ### Security 
+    * Bluetooth vulnerability 
