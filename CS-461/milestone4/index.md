@@ -165,7 +165,7 @@ Now, its the fun stuff. We were told to "Spend quality time working on your team
         * Game and player information should be stored using minimal amount of memory to conserve space.
 ---
 #### Overall Architecture Design
-![Overal Architecture Design](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone4/architecture-diagram.png)
+![Overall Architecture Design](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone4/architecture-diagram.png)
 
 ---
 
