@@ -29,7 +29,7 @@ For Milestone 5, we finished the class project with a retrospective meeting. We 
 5. Are there any items that need to be brought up with someone outside the team? (i.e. in this case the instructor)
     * Survey says "no!"
 
-### Task 2:
+### Task 2: Team Project Inception (III)
 
 We had to update our architecture diagram to include the actual web service and specify the mobile clients. Here is the updated diagram:
 
@@ -41,9 +41,10 @@ We also needed to update our ER diagram. Here is the updated diagram:
 
 ![updated ER diagram](ER-diagram-1.1.png)
 
-### Task 3: 
+### Task 3: Team Project Inception (III)
 
-For task 3, we had to make a welcome page on our repo for the project. You can see that here. 
+For task 3, we had to make a welcome page on our repository for the project. You can see that here. 
 
-### Task 4:
+### Task 4: Team Project Construction
 
+For this final task, we held a backlog refinement meeting and updated some of our Product Backlog Items, broke them down into tasks, assigned them to individuals and committed them to Sprint 1. 
