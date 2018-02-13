@@ -49,3 +49,4 @@ For task 3, we had to make a welcome page on our repository for the project. You
 
 For this final task, we held a backlog refinement meeting and updated some of our Product Backlog Items, broke them down into tasks, assigned them to individuals and committed them to Sprint 1. 
 
+![sprint1](sprint-1-before.PNG)
