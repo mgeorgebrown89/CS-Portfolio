@@ -20,7 +20,7 @@ For Milestone 5, we finished the class project with a retrospective meeting. We 
 3. What still puzzles you?
     * "Why did we have a triple-composite key in the first place?"
 4. What can the team do better during the next Sprint? 
-    * Action Plan:
+    * Action Plan:S
         * Make an itinerary for our planning meetings
         * Working on one thing at a time as a group
         * Making a development database on Azure 
