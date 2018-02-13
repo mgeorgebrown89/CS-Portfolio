@@ -33,7 +33,7 @@ For Milestone 5, we finished the class project with a retrospective meeting. We 
 
 We had to update our architecture diagram to include the actual web service and specify the mobile clients. Here is the updated diagram:
 
-![updated architecutre diagram](architecture-diagram-UPDATED.png)
+![updated architecture diagram](architecture-diagram-UPDATED.png)
 
 We needed to update our needs and requirements to include our Rest API. You can see that on the official project page.
 
@@ -48,3 +48,4 @@ For task 3, we had to make a welcome page on our repository for the project. You
 ### Task 4: Team Project Construction
 
 For this final task, we held a backlog refinement meeting and updated some of our Product Backlog Items, broke them down into tasks, assigned them to individuals and committed them to Sprint 1. 
+
