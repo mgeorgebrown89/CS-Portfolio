@@ -14,6 +14,10 @@ We tossed around a lot of ideas. Currently, our team name is et progressus, whic
 Here is a picture of our logo & letterhead:
 ![logo/letterhead](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone1/et progressus-logo-letterhead-black.png)
 
+Here is the **final** logo and team name. This better reflects the product we are actually building. 
+![new logo/letterhead](https://mgeorgebrown89.github.io/CS-Portfolio/CS-461/milestone1/Sneaky Software-logo-black.png)
+
+
 We chose all this because we were originally thinking we were going to build a study aide application, but we may be changing this soon since we are most likely going a different direction with our project.
 
 ### Task 2: Resumes
