@@ -26,4 +26,4 @@ I'm spending more of my time on the project, rather than blogging about it.
 
 ## Repository
 
-The code for the Milestones and the Team project can be found [here](https://bitbucket.org/mgeorgebrown89/etprogressus). My individual project repo is [here]().
+The code for the Milestones and the Team project can be found [here](https://bitbucket.org/mgeorgebrown89/sneakysoftware). My individual project repo is [here]().

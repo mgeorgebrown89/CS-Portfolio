@@ -19,5 +19,3 @@ This portfolio is mostly a showcase of my senior project and all of my work done
 ### [Software Engineering II (CS 461)](CS-461)
 
 ### [Software Engineering II (CS 462)](CS-462)
-
-### [Senior Project](Senior-Project)
